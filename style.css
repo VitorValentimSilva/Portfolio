@@ -20,20 +20,27 @@ header{
   justify-content: space-between;
 }
 
-header > div{
+header > a{
   display: flex;
 }
 
-header > div > h3{
+a{
+  text-decoration: none;
+}
+
+header > a > h3{
   margin-left: 5px;
   font-size: 20px;
 }
 
 nav > a{
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 17px;
-  padding-left: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 22px;
+}
+
+nav > a:hover{
+  color: #58585885;
 }
 
 nav a[href="mailto:vitorvalentin840@gmail.com"] {
@@ -80,13 +87,16 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 }
 
 #apresentacaoTexto > ul > li > a{
-  text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   line-height: 18.78px;
   text-align: left;
   display: flex;
   align-items: center;
+}
+
+#apresentacaoTexto > ul > li > a:hover{
+  color: #58585885;
 }
 
 #apresentacao > div > img{
@@ -126,7 +136,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 #skills{
   padding-left: 9%;
   padding-right: 9%;
-  padding-top: 9%;
+  padding-top: 6%;
 }
 
 #skills > h2{
@@ -171,7 +181,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 #hobbies{
   padding-left: 9%;
   padding-right: 9%;
-  padding-top: 13%;
+  padding-top: 7%;
 }
 
 #hobbies > h2{
@@ -196,7 +206,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   font-weight: 700;
   line-height: 37.57px;
   text-align: center;
-  padding-top: 7%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -211,6 +221,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   font-size: 20px;
   font-weight: 700;
   line-height: 25.83px;
+  padding-top: 3%;
 }
 
 #formacao > div > div > p{
@@ -219,16 +230,93 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   line-height: 18.78px;
 }
 
+#projetos{
+  padding: 5% 9% 5% 9%;
+}
+
+#projetos > h2{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37.57px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+#projetos > div{
+  display: flex;
+  padding-bottom: 6%;
+}
+
+#projetos > div > img{
+  width: 752px;
+  height: 406px;
+  border: 1px solid black;
+}
+
+#projetos > div > div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 3%;
+}
+
+#projetos > div > div > h3{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.83px;
+  padding-bottom: 2%;
+}
+
+#projetos > div > div > p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+  padding-bottom: 6%;
+}
+
+#projetos > div > div > div{
+  display: flex;
+  justify-content: space-between;
+}
+
+#projetos > div > div > div > a{
+  padding: 5.5%;
+  border: 1px solid #2A7AE4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+  border-radius: 5px;
+}
+
+.buttonReposiroio{
+  color: #2A7AE4;
+}
+
+.buttonReposiroio:hover{
+  color: #2a7be4d5;
+  background-color: #d8d8d84b;
+}
+
+.buttonProjeto{
+  background-color: #2A7AE4;
+  color: #FFFFFF;
+}
+
+.buttonProjeto:hover{
+  background-color: #2a7be4c9;
+  color: #ffffffce;
+}
+
 #contato{
   background-color: #EAF2FD;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.438);
-  padding: 6% 9% 5% 9%;
+  padding: 5% 9% 5% 9%;
   display: flex;
 }
 
 #contato > img{
-  width: 464px;
-  height: 593px;
+  width: 610px;
+  height: 610px;
   margin-right: 4%;
 }
 
@@ -250,7 +338,59 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 }
 
 #contato > div > form > input{
-  width: 600px;
-  height: 47px;
-  border-radius: 7px;
+  width: 560px;
+  height: 40px;
+  border-color: #ffffff10;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding-left: 1.5%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+::placeholder{
+  font-size: 18px;
+  font-weight: 600;
+  color: #8a8a8a;
+}
+
+#contato > div > form > textarea{
+  width: 560px;
+  height: 160px;
+  border-color: #ffffff10;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding-left: 1.5%;
+  padding-top: 1.5%;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#contato > div > form > button{
+  width: 165px;
+  height: 51px;
+  background-color: #2A7AE4;
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border-color: #2A7AE4;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.438);
+  cursor: pointer;
+}
+
+#contato > div > form > button:hover{
+  background-color: #2a7be4d8;
+  border-color: #2a7be4d8;
+}
+
+#rodaPe{
+  width: 1,440px;
+  height: 102px;
+  background-color: #FFFFFF;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
