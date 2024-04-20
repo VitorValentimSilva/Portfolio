@@ -250,14 +250,16 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 #projetos > div > img{
   width: 752px;
   height: 406px;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  box-shadow: 0px 4px 4px 0px #00000065;
+  border-radius: 8px;
+  margin-right: 5%;
 }
 
 #projetos > div > div{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 3%;
 }
 
 #projetos > div > div > h3{
@@ -305,6 +307,14 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 .buttonProjeto:hover{
   background-color: #2a7be4c9;
   color: #ffffffce;
+}
+
+.inverter{
+  flex-direction: row-reverse; 
+}
+
+.inverter > img{
+  margin-left: 5%;
 }
 
 #contato{
