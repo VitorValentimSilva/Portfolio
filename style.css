@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Geral */
+
 *{
   margin: 0%;
   padding: 0%;
@@ -11,11 +13,10 @@ body{
   background-color: #F5F5F5;
 }
 
+/* Cabeçalho */
+
 header{
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-top: 4%;
-  padding-bottom: 10%;
+  padding: 4% 9% 10% 9%;
   display: flex;
   justify-content: space-between;
 }
@@ -47,12 +48,12 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   font-weight: 700;
 }
 
+/* Section Apresentação */
+
 #apresentacao{
-  padding-left: 9%;
-  padding-right: 9%;
+  padding: 0% 9% 10% 9%;
   display: flex;
   flex-direction: row-reverse;
-  padding-bottom: 10%;
 }
 
 #apresentacaoTexto{
@@ -108,11 +109,10 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.363);
 }
 
+/* Section Sobre Mim */
 
 #sobreMim{
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-bottom: 50px;
+  padding: 0% 9% 4% 9%;
   background-color: #EAF2FD;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.438);
 }
@@ -133,10 +133,10 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   padding-bottom: 2%;
 }
 
+/* Section Skills */
+
 #skills{
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-top: 6%;
+  padding: 6% 8% 0% 8%;
 }
 
 #skills > h2{
@@ -144,12 +144,13 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   font-size: 32px;
   font-weight: 700;
   line-height: 37.57px;
-  padding-bottom: 5%;
 }
 
 .divPai{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 3%;
 }
 
 .divFilho{
@@ -162,6 +163,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   align-items: center;
   border-radius: 10px;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.363);
+  margin-top: 5%;
 }
 
 .divFilho > img{
@@ -178,10 +180,10 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   text-align: center;
 }
 
+/* Section Hobbies */
+
 #hobbies{
-  padding-left: 9%;
-  padding-right: 9%;
-  padding-top: 7%;
+  padding: 7% 9% 0% 9%;
 }
 
 #hobbies > h2{
@@ -189,14 +191,13 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   font-weight: 700;
   line-height: 37.57px;
   text-align: center;
-  padding-bottom: 5%;
 }
 
+/* Section Formação */
+
 #formacao{
-  padding-left: 9%;
-  padding-right: 9%;
+  padding: 0% 9% 5% 9%;
   margin-top: 10%;
-  padding-bottom: 5%;
   background-color: #EAF2FD;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.438);
 }
@@ -207,7 +208,6 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   line-height: 37.57px;
   text-align: center;
   padding-top: 5%;
-  padding-bottom: 5%;
 }
 
 #formacao > div > div > img{
@@ -215,6 +215,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   height: 347px;
   border-radius: 15px;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.363);
+  margin-top: 8%;
 }
 
 #formacao > div > div > h3{
@@ -222,6 +223,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   font-weight: 700;
   line-height: 25.83px;
   padding-top: 3%;
+  padding-bottom: 1%;
 }
 
 #formacao > div > div > p{
@@ -229,6 +231,8 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   font-weight: 500;
   line-height: 18.78px;
 }
+
+/* Section Projetos */
 
 #projetos{
   padding: 5% 9% 5% 9%;
@@ -278,7 +282,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 
 #projetos > div > div > div{
   display: flex;
-  justify-content: space-between;
+  gap: 5%;
 }
 
 #projetos > div > div > div > a{
@@ -317,6 +321,8 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   margin-left: 5%;
 }
 
+/* Section Contato */
+
 #contato{
   background-color: #EAF2FD;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.438);
@@ -348,7 +354,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 }
 
 #contato > div > form > input{
-  width: 560px;
+  width: 540px;
   height: 40px;
   border-color: #ffffff10;
   border-radius: 5px;
@@ -365,7 +371,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 }
 
 #contato > div > form > textarea{
-  width: 560px;
+  width: 540px;
   height: 160px;
   border-color: #ffffff10;
   border-radius: 5px;
@@ -394,8 +400,10 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   border-color: #2a7be4d8;
 }
 
+/* Rodapé */
+
 #rodaPe{
-  width: 1,440px;
+  width: 100%;
   height: 102px;
   background-color: #FFFFFF;
   display: flex;
@@ -403,4 +411,233 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+/* CSS para Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1145px){
+  /* Cabeçalho */
+
+  header{
+    padding: 2.5% 3.5% 6% 3.5%;
+  }
+
+  nav a:not(:last-child) {
+    display: none;
+  }
+
+  /* Section Apresentação */
+
+  #apresentacao{
+    padding: 0% 3.5% 6% 3.5%;
+  }
+
+  #apresentacaoTexto > h1{
+    font-size: 27px;
+    line-height: 25.83px;
+    padding-bottom: 16px;
+  }
+
+  #apresentacaoTexto > p{
+    font-size: 19px;
+    line-height: 18.78px;
+    padding-bottom: 18px;
+  }
+
+  #apresentacao > div > img{
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Section Sobre Mim */
+
+  #sobreMim{
+    padding: 0% 3.5% 3% 3.5%;
+  }
+
+  #sobreMim > h2{
+    font-size: 26px;
+    line-height: 25.83px;
+    padding-top: 3%;
+  }
+
+  #sobreMim > p{
+    font-size: 15px;
+    line-height: 16.44px;
+    padding-right: 0%;
+  }
+
+  /* Section Skills */
+
+  #skills{
+    padding: 5% 3.5% 0% 3.5%;
+  }
+
+  #skills > h2{
+    font-size: 27px;
+    line-height: 25.83px;
+  }
+  
+  .divFilho{
+    width: 200px;
+    height: 118px;
+  }
+  
+  .divFilho > img{
+    width: 40px;
+    height: 40px;
+    padding-bottom: 3%;
+  }
+  
+  .divFilho > p{
+    font-size: 15px;
+    padding-bottom: 5%;
+  }
+
+  /* Section Hobbies */
+
+  #hobbies{
+    padding: 7% 3.5% 0% 3.5%;
+  }
+
+  #hobbies > h2{
+    font-size: 27px;
+    line-height: 25.83px;
+  }
+
+  /* Section Formação */
+
+  #formacao{
+    padding: 0% 3.5% 3% 3.5%;
+    margin-top: 7%;
+  }
+
+  #formacao > h2{
+    font-size: 27px;
+    line-height: 25.83px;
+    padding-top: 3%;
+  }
+
+  #formacao > div > div > img{
+    width: 350px;
+    height: 240px;
+  }
+
+  #formacao > div > div > h3{
+    font-size: 19px;
+    line-height: 18.78px;
+    padding-bottom: 2%;
+  }
+
+  #formacao > div > div > p{
+    font-size: 15px;
+    line-height: 16.44px;
+  }
+
+  /* Section Projetos */
+
+  #projetos{
+    padding: 5% 3.5% 0% 3.5%;
+  }
+
+  #projetos > h2{
+    font-size: 27px;
+    line-height: 25.83px;
+    padding-bottom: 3.5%;
+  }
+
+  #projetos > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #projetos > div > img{
+    width: 700px;
+    height: 400px;
+    margin-right: 0%;
+    margin-bottom: 3%;
+  }
+
+  #projetos > div > div > h3{
+    font-size: 20px;
+    line-height: 18.78px;
+  }
+
+  #projetos > div > div > p{
+    font-size: 15px;
+    padding-bottom: 4%;
+  }
+
+  #projetos > div > div > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+
+  #projetos > div > div > div > a{
+    padding: 6%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.44px;
+  }
+
+  .inverter > img{
+    margin-left: 0%;
+  }
+
+  /* Section Contato */
+
+  #contato{
+    padding: 3% 3.5% 3% 3.5%;
+  }
+
+  #contato > img{
+    display: none;
+  }
+
+  #contato > div > h2{
+    font-size: 27px;
+    padding-bottom: 0.6%;
+  }
+
+  #contato > div > p{
+    font-size: 15px;
+  }
+
+  #contato > div > form{
+    padding-top: 4%;
+  }
+
+  #contato > div > form > input{
+    width: 704px;
+    height: 46px;
+    margin-bottom: 3%;
+    font-size: 16px;
+  }
+
+  ::placeholder{
+    font-size: 16px;
+  }
+
+  #contato > div > form > textarea{
+    width: 704px;
+    height: 110px;
+    margin-bottom: 3%;
+    font-size: 16px;
+  }
+
+  #contato > div > form > button{
+    width: 151px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  /* Rodapé */
+
+  #rodaPe{
+    height: 80px;
+    font-size: 15px;
+  }
 }
