@@ -109,6 +109,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   opacity: 0px;
   border-radius: 50%;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.363);
+  margin-left: 5%;
 }
 
 /* Section Sobre Mim */
@@ -128,7 +129,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 }
 
 #sobreMim > p{
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 18.78px;
   padding-right: 30%;
@@ -214,8 +215,8 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 }
 
 #formacao > div > div > img{
-  width: 368px;
-  height: 347px;
+  width: 400px;
+  height: 320px;
   border-radius: 15px;
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.363);
   margin-top: 8%;
@@ -890,7 +891,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   }
 
   #contato > div > form > input{
-    width: 100%;
+    width: 90%;
     height: 30px;
     margin-bottom: 4%;
     padding-left: 1.5%;
@@ -902,7 +903,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   }
 
   #contato > div > form > textarea{
-    width: 100%;
+    width: 90%;
     height: 100px;
     font-size: 14px;
   }
