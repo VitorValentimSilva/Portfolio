@@ -66,6 +66,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   line-height: 61.05px;
   text-align: left;
   padding-bottom: 24px;
+  text-align: justify;
 }
 
 #apresentacaoTexto > p{
@@ -74,6 +75,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   line-height: 25.83px;
   text-align: left;
   padding-bottom: 24px;
+  text-align: justify;
 }
 
 #apresentacaoTexto > ul{
@@ -131,6 +133,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   line-height: 18.78px;
   padding-right: 30%;
   padding-bottom: 2%;
+  text-align: justify;
 }
 
 /* Section Skills */
@@ -415,7 +418,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
 
 /* CSS para Tablet */
 
-@media screen and (min-width: 768px) and (max-width: 1145px){
+@media screen and (min-width: 760px) and (max-width: 1145px){
   /* Cabeçalho */
 
   header{
@@ -611,7 +614,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   }
 
   #contato > div > form > input{
-    width: 704px;
+    width: 680px;
     height: 46px;
     margin-bottom: 3%;
     font-size: 16px;
@@ -622,7 +625,7 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   }
 
   #contato > div > form > textarea{
-    width: 704px;
+    width: 680px;
     height: 110px;
     margin-bottom: 3%;
     font-size: 16px;
@@ -639,5 +642,281 @@ nav a[href="mailto:vitorvalentin840@gmail.com"] {
   #rodaPe{
     height: 80px;
     font-size: 15px;
+  }
+}
+
+/* CSS para Mobile */
+
+@media screen and (max-width: 759px){
+  /* Cabeçalho */
+
+  header{
+    padding: 3% 6% 6% 6%;
+  }
+
+  header > a > img{
+    width: 20px;
+    height: 20px;
+  }
+
+  header > a > h3{
+  margin-left: 3px;
+  font-size: 16px;
+  }
+
+  nav > a{
+    font-size: 14px;
+    padding-left: 0px;
+  }
+  nav a[href="mailto:vitorvalentin840@gmail.com"] {
+    font-weight: 500;
+  }
+
+  nav a:not(:last-child) {
+    display: none;
+  }
+
+  /* Section Apresentação */
+
+  #apresentacao{
+    padding: 0% 6% 10% 6%;
+    flex-direction: column;
+  }
+
+  #apresentacaoTexto > h1{
+    font-size: 22px;
+    line-height: 25.83px;
+    padding-bottom: 12px;
+  }
+
+  #apresentacaoTexto > p{
+    font-size: 14px;
+    line-height: 16.44px;
+    padding-bottom: 12px;
+  }
+
+  #apresentacaoTexto > ul{
+    width: 100%;
+  }
+
+  #apresentacaoTexto > ul > li > a{
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+
+  #apresentacaoTexto > ul > li > a > img{
+    height: 18px;
+    width: 18px;
+  }
+
+  #apresentacao > div > img{
+    width: 170px;
+    height: 170px;
+    margin-bottom: 2%;
+  }
+
+  /* Section Sobre Mim */
+
+  #sobreMim{
+    padding: 0% 6% 4% 6%;
+  }
+
+  #sobreMim > h2{
+    font-size: 22px;
+    line-height: 25.83px;
+    padding-top: 4%;
+    padding-bottom: 2%;
+  }
+
+  #sobreMim > p{
+    font-size: 14px;
+    line-height: 16.44px;
+    text-align: justify;
+    padding-right: 0%;
+    padding-bottom: 3%;
+  }
+
+  #sobreMim > img{
+    width: 100px;
+    height: 45px;
+  }
+
+  /* Section Skills */
+
+  #skills{
+    padding: 10% 6% 0% 6%;
+  }
+
+  #skills > h2{
+    font-size: 24px;
+    line-height: 25.83px;
+  }
+
+  .divPai{
+    margin-top: 3%;
+  }
+
+  .divFilho{
+    width: 140px;
+    height: 120px;
+  }
+
+  .divFilho > img{
+    width: 38px;
+    height: 38px;
+    padding-bottom: 3%;
+  }
+
+  .divFilho > p{
+    font-size: 13px;
+    padding-bottom: 2%;
+  }
+
+  /* Section Hobbies */
+
+  #hobbies{
+    padding: 10% 6% 0% 6%;
+  }
+
+  #hobbies > h2{
+    font-size: 24px;
+    line-height: 25.83px;
+  }
+
+  /* Section Formação */
+
+  #formacao{
+    padding: 0% 6% 7% 6%;
+    margin-top: 15%;
+  }
+
+  #formacao > h2{
+    font-size: 24px;
+    line-height: 25.83px;
+  }
+
+  #formacao > div > div > img{
+    width: 100%;
+    height: 200px;
+    margin-top: 7%;
+  }
+
+  #formacao > div > div > h3{
+    font-size: 16px;
+    padding-top: 2%;
+    padding-bottom: 0%;
+  }
+
+  #formacao > div > div > p{
+    font-size: 14px;
+  }
+
+  /* Section Projetos */
+
+  #projetos{
+    padding: 10% 6% 6% 6%;
+  }
+  
+  #projetos > h2{
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 7%;
+  }
+  
+  #projetos > div{
+    padding-bottom: 10%;
+    flex-direction: column;
+  }
+  
+  #projetos > div > img{
+    width: 100%;
+    height: 200px;
+    margin-right: 0%;
+  }
+
+  #projetos > div > div{
+    text-align: center;
+  }
+  
+  #projetos > div > div > h3{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-top: 4%;
+  }
+  
+  #projetos > div > div > p{
+    font-size: 13px;
+    line-height: 14px;
+    padding-bottom: 3%;
+  }
+
+  #projetos > div > div > div{
+    justify-content: center;
+  }
+  
+  #projetos > div > div > div > a{
+    padding: 3%;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+  .inverter > img{
+    margin-left: 0%;
+  }
+
+  /* Section Contato */
+
+  #contato{
+    padding: 6% 6% 10% 6%;
+  }
+
+  #contato > img{
+    display: none;
+  }
+
+  #contato > div > h2{
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  #contato > div > p{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  #contato > div > form{
+    padding-top: 3%;
+  }
+
+  #contato > div > form > input{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 4%;
+    padding-left: 1.5%;
+    font-size: 14px;
+  }
+
+  ::placeholder{
+    font-size: 14px;
+  }
+
+  #contato > div > form > textarea{
+    width: 100%;
+    height: 100px;
+    font-size: 14px;
+  }
+
+  #contato > div > form > button{
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+  }
+
+  /* Rodapé */
+
+  #rodaPe{
+    height: 80px;
+    font-size: 14px;
   }
 }
