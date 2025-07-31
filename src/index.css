@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --color-BackgroundLightTheme: hsl(210, 20%, 98%);
+  --color-BackgroundDarkTheme: hsl(220, 30%, 5%);
+  --color-SurfaceLightTheme: hsl(210, 15%, 95%);
+  --color-SurfaceDarkTheme: hsl(220, 25%, 8%);
+  --color-PrimaryLightTheme: hsl(280, 100%, 50%);
+  --color-PrimaryDarkTheme: hsl(280, 100%, 70%);
+  --color-SecondaryLightTheme: hsl(200, 100%, 45%);
+  --color-SecondaryDarkTheme: hsl(200, 100%, 70%);
+  --color-AccentLightTheme: hsl(320, 100%, 40%);
+  --color-AccentDarkTheme: hsl(320, 100%, 65%);
+  --color-Error: #eb5757;
+}
