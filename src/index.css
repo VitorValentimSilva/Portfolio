@@ -11,5 +11,48 @@
   --color-SecondaryDarkTheme: hsl(200, 100%, 70%);
   --color-AccentLightTheme: hsl(320, 100%, 40%);
   --color-AccentDarkTheme: hsl(320, 100%, 65%);
-  --color-Error: #eb5757;
+}
+
+@layer base {
+  html.dark body {
+    background-color: var(--color-BackgroundDarkTheme);
+    background-image: radial-gradient(
+        circle at 20% 30%,
+        var(--color-PrimaryDarkTheme) -50%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 70%,
+        var(--color-SecondaryDarkTheme) -50%,
+        transparent 50%
+      ),
+      linear-gradient(
+        135deg,
+        var(--color-BackgroundDarkTheme),
+        var(--color-SurfaceDarkTheme)
+      );
+    background-blend-mode: screen;
+    background-attachment: fixed;
+  }
+
+  html.light body {
+    background-color: var(--color-BackgroundLightTheme);
+    background-image: radial-gradient(
+        circle at 20% 30%,
+        var(--color-PrimaryLightTheme) -60%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 70%,
+        var(--color-SecondaryLightTheme) -60%,
+        transparent 50%
+      ),
+      linear-gradient(
+        135deg,
+        var(--color-BackgroundLightTheme),
+        var(--color-SurfaceLightTheme)
+      );
+    background-blend-mode: normal;
+    background-attachment: fixed;
+  }
 }

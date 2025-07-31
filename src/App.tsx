@@ -1,7 +1,19 @@
+import Header from "./components/Header";
+
 function App() {
   return (
     <>
-      <h1 className="text-2xl text-red-300">Hello World</h1>
+      <Header
+        name="Vitor Valentim"
+        nameItems={[
+          "Início",
+          "Sobre",
+          "Tecnologias",
+          "Projetos",
+          "Formação",
+          "Contato",
+        ]}
+      />
     </>
   );
 }
