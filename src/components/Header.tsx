@@ -1,6 +1,5 @@
-import { MoonIcon } from "@heroicons/react/24/outline";
 import { useTheme } from "../hooks/useTheme";
-import { SunIcon } from "@heroicons/react/24/outline";
+import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
 interface HeaderProps {
   name: string;
@@ -55,9 +54,9 @@ export default function Header({ name, nameItems }: HeaderProps) {
         }`}
       >
         {theme === "dark" ? (
-          <SunIcon className="w-6 h-6 text-secondary" />
+          <IoMoonOutline className="w-6 h-6 text-secondary" />
         ) : (
-          <MoonIcon className="w-6 h-6 text-secondary" />
+          <IoSunnyOutline className="w-6 h-6 text-secondary" />
         )}
       </button>
     </header>
