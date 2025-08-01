@@ -1,5 +1,5 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { ThemeContext, type ThemeContextType } from "./themeContext";
+import { ThemeContext, type ThemeContextType } from "./ThemeContext";
 
 type Theme = "light" | "dark";
 
