@@ -31,7 +31,7 @@ export default function Footer({ name, description }: FooterProps) {
         >
           <div className="flex-row items-center justify-center">
             <button
-              onClick={() => "#"}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className={`cursor-pointer text-2xl font-bold transition-transform duration-300 hover:scale-105
               ${
                 theme === "dark"
@@ -93,6 +93,7 @@ export default function Footer({ name, description }: FooterProps) {
 
         <div className="flex items-center justify-center py-6">
           <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className={`cursor-pointer border rounded-full px-8 py-2 font-semibold transition-transform duration-300 hover:scale-105 
             ${
               theme === "dark"

@@ -16,7 +16,7 @@ export default function AboutMe({ text, information }: AboutMeProps) {
   const { theme } = useTheme();
 
   return (
-    <section id="#Sobre">
+    <section id="Sobre">
       <h2 className={` ${theme}`}>Sobre Mim</h2>
 
       <div>
