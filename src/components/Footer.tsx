@@ -1,31 +1,29 @@
-import type { JSX } from "react";
 import { useTheme } from "../hooks/useTheme";
 import { IoCode, IoHeartOutline } from "react-icons/io5";
-
-interface SocialLink {
-  icon: JSX.Element;
-  href: string;
-  label: string;
-}
+import SocialLinks from "./SocialLinks";
+import { SOCIAL_LINKS } from "../utils/socialLinks";
 
 interface FooterProps {
   name: string;
   description: string;
-  socialLinks: SocialLink[];
 }
 
-export default function Footer({
-  name,
-  description,
-  socialLinks,
-}: FooterProps) {
+export default function Footer({ name, description }: FooterProps) {
   const { theme } = useTheme();
 
   return (
-    <footer>
-      <section className="max-w-7xl w-full mx-auto">
-        <section
-          className={`grid grid-cols-3 items-center py-6 border-b  ${
+    <footer
+      className={` border-t
+      ${
+        theme === "dark"
+          ? "border-t-BackgroundLightTheme"
+          : "border-t-BackgroundDarkTheme"
+      }`}
+    >
+      <section className="max-w-[1450px] w-full mx-auto">
+        <div
+          className={`grid grid-cols-3 items-center py-6 border-b 
+          ${
             theme === "dark"
               ? "border-b-BackgroundLightTheme"
               : "border-b-BackgroundDarkTheme"
@@ -54,28 +52,7 @@ export default function Footer({
             </p>
           </div>
 
-          <div className="flex items-center justify-center gap-8">
-            {socialLinks.map((item, index) => (
-              <button
-                key={index}
-                className={`rounded-full p-2.5 cursor-pointer transition-transform duration-300 hover:scale-105
-                ${
-                  theme === "dark"
-                    ? "bg-BackgroundDarkTheme text-BackgroundLightTheme hover:bg-PrimaryDarkTheme"
-                    : "bg-BackgroundLightTheme text-BackgroundDarkTheme hover:bg-PrimaryLightTheme"
-                }`}
-              >
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={item.label}
-                >
-                  {item.icon}
-                </a>
-              </button>
-            ))}
-          </div>
+          <SocialLinks socialLinks={SOCIAL_LINKS} />
 
           <div className="flex flex-col items-end text-right">
             <p
@@ -112,9 +89,9 @@ export default function Footer({
               © 2025 {name}. Todos os direitos reservados.
             </p>
           </div>
-        </section>
+        </div>
 
-        <section className="flex items-center justify-center py-6">
+        <div className="flex items-center justify-center py-6">
           <button
             className={`cursor-pointer border rounded-full px-8 py-2 font-semibold transition-transform duration-300 hover:scale-105 
             ${
@@ -125,7 +102,7 @@ export default function Footer({
           >
             Voltar ao Topo
           </button>
-        </section>
+        </div>
       </section>
     </footer>
   );

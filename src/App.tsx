@@ -1,6 +1,6 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { IoLogoGithub, IoLogoLinkedin, IoMailOutline } from "react-icons/io5";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -17,27 +17,11 @@ function App() {
         ]}
       />
 
-      <Footer
-        name="Vitor Valentim"
-        description="Desenvolvedor Full Stack"
-        socialLinks={[
-          {
-            icon: <IoLogoGithub className="w-6 h-6" />,
-            href: "https://github.com/VitorValentimSilva",
-            label: "GitHub",
-          },
-          {
-            icon: <IoLogoLinkedin className="w-6 h-6" />,
-            href: "https://linkedin.com/in/vitor-valentim-desenvolvedor",
-            label: "LinkedIn",
-          },
-          {
-            icon: <IoMailOutline className="w-6 h-6" />,
-            href: "mailto:vitorvalentin840@gmail.com",
-            label: "Email",
-          },
-        ]}
-      />
+      <main className="max-w-[1450px] items-center justify-center m-auto">
+        <Home />
+      </main>
+
+      <Footer name="Vitor Valentim" description="Desenvolvedor Full Stack" />
     </>
   );
 }
