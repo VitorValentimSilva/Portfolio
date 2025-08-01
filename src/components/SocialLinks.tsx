@@ -16,8 +16,8 @@ export default function SocialLinks({ socialLinks }: SocialLinksProps) {
           className={`rounded-full p-2.5 cursor-pointer transition-transform duration-300 hover:scale-105
           ${
             theme === "dark"
-              ? "bg-BackgroundDarkTheme text-BackgroundLightTheme hover:bg-PrimaryDarkTheme"
-              : "bg-BackgroundLightTheme text-BackgroundDarkTheme hover:bg-PrimaryLightTheme"
+              ? "bg-BackgroundDarkTheme/60 text-BackgroundLightTheme hover:bg-PrimaryDarkTheme/70"
+              : "bg-BackgroundLightTheme/60 text-BackgroundDarkTheme hover:bg-PrimaryLightTheme/60"
           }`}
         >
           <a
