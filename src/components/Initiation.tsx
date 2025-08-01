@@ -19,7 +19,7 @@ export default function Initiation({
   return (
     <section
       id="Início"
-      className="flex flex-col items-center justify-center gap-8 h-[668px]"
+      className="flex flex-col items-center justify-center gap-11 h-[858px]"
     >
       <div className="flex flex-col items-center justify-center gap-6">
         <h1 className="text-7xl text-center font-bold">
@@ -101,7 +101,7 @@ export default function Initiation({
       <div className="flex justify-center">
         <IoArrowDown
           size={26}
-          className={`mt-2 animate-bounce
+          className={`mt-4 animate-bounce
             ${
               theme === "dark"
                 ? "text-BackgroundLightTheme/60"
