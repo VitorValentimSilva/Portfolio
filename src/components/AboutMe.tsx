@@ -1,5 +1,6 @@
 import type { ReactElement } from "react";
 import { useTheme } from "../hooks/useTheme";
+import * as motion from "motion/react-client";
 
 interface InfoItem {
   icon: ReactElement;
@@ -46,17 +47,21 @@ export default function AboutMe({ text, information }: AboutMeProps) {
 
         <div className="flex flex-col items-center gap-8">
           {information.map((item, idx) => (
-            <div
+            <motion.div
               key={idx}
               className={`flex items-center gap-4 rounded-xl p-5 w-[700px]
-              ${
-                theme === "dark"
-                  ? "bg-SurfaceDarkTheme"
-                  : "bg-SurfaceLightTheme"
-              }`}
+                ${
+                  theme === "dark"
+                    ? "bg-SurfaceDarkTheme"
+                    : "bg-SurfaceLightTheme"
+                }`}
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: idx * 0.2 }}
             >
               <div
-                className={`rounded-full p-2.5 animate-pulse shadow-xl " ${
+                className={`rounded-full p-2.5 animate-pulse shadow-xl ${
                   theme === "dark" ? item.iconClassDark : item.iconClassLight
                 }`}
               >
@@ -64,8 +69,7 @@ export default function AboutMe({ text, information }: AboutMeProps) {
               </div>
               <div className="flex flex-col gap-1">
                 <h3
-                  className={`font-semibold text-justify text-xl
-                  ${
+                  className={`font-semibold text-justify text-xl ${
                     theme === "dark"
                       ? "text-BackgroundLightTheme"
                       : "text-BackgroundDarkTheme"
@@ -83,7 +87,7 @@ export default function AboutMe({ text, information }: AboutMeProps) {
                   {item.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
