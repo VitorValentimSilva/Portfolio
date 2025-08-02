@@ -17,7 +17,7 @@ function App() {
         ]}
       />
 
-      <main className="max-w-[1450px] items-center justify-center m-auto">
+      <main className="items-center justify-center m-auto">
         <Home />
       </main>
 

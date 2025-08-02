@@ -16,8 +16,8 @@ export default function Footer({ name, description }: FooterProps) {
       className={` border-t
       ${
         theme === "dark"
-          ? "border-t-BackgroundLightTheme/50 bg-BackgroundDarkTheme/40"
-          : "border-t-BackgroundDarkTheme/50 bg-BackgroundLightTheme/40"
+          ? "border-t-BackgroundLightTheme/50 bg-BackgroundDarkTheme/50"
+          : "border-t-BackgroundDarkTheme/50 bg-BackgroundLightTheme/50"
       }`}
     >
       <section className="max-w-[1450px] w-full mx-auto">

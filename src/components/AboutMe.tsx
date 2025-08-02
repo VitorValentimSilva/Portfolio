@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import { useTheme } from "../hooks/useTheme";
 import * as motion from "motion/react-client";
+import TitleField from "./TitleField";
 
 interface InfoItem {
   icon: ReactElement;
@@ -19,15 +20,11 @@ export default function AboutMe({ text, information }: AboutMeProps) {
   const { theme } = useTheme();
 
   return (
-    <section id="Sobre" className="flex flex-col items-center">
-      <h2
-        className={`inline-block text-5xl font-bold border-b-4 pb-4 text-center
-        ${
-          theme === "dark" ? "text-PrimaryDarkTheme" : "text-PrimaryLightTheme"
-        }`}
-      >
-        Sobre Mim
-      </h2>
+    <section
+      id="Sobre"
+      className="max-w-[1450px] flex flex-col items-center m-auto"
+    >
+      <TitleField title="Sobre Mim" />
 
       <div className="flex items-center justify-between gap-20 py-12">
         <div className="flex flex-col items-center gap-8">

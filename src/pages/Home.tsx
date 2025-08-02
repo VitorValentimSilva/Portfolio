@@ -3,6 +3,10 @@ import AboutMe from "../components/AboutMe";
 import Initiation from "../components/Initiation";
 import { HiOutlineLightBulb } from "react-icons/hi2";
 import { PiLightning } from "react-icons/pi";
+import Technology from "../components/Technology";
+import { GoDatabase } from "react-icons/go";
+import { FiServer } from "react-icons/fi";
+import { TfiMobile } from "react-icons/tfi";
 
 export default function Home() {
   return (
@@ -49,6 +53,47 @@ export default function Home() {
               "text-AccentDarkTheme bg-AccentDarkTheme/40 shadow-AccentDarkTheme/70",
             iconClassLight:
               "text-AccentLightTheme bg-AccentLightTheme/40 shadow-AccentLightTheme",
+          },
+        ]}
+      />
+
+      <Technology
+        infoTechnology={[
+          {
+            icon: <IoCodeSlash size={30} />,
+            title: "Frontend",
+            information: ["React", "TypeScript"],
+            iconClassDark:
+              "text-PrimaryDarkTheme bg-PrimaryDarkTheme/40 shadow-PrimaryDarkTheme/50",
+            iconClassLight:
+              "text-PrimaryLightTheme bg-PrimaryLightTheme/40 shadow-PrimaryLightTheme/50",
+          },
+          {
+            icon: <TfiMobile size={30} />,
+            title: "Mobile",
+            information: ["React Native"],
+            iconClassDark:
+              "text-SecondaryDarkTheme bg-SecondaryDarkTheme/40 shadow-SecondaryDarkTheme/50",
+            iconClassLight:
+              "text-SecondaryLightTheme bg-SecondaryLightTheme/40 shadow-SecondaryLightTheme/50",
+          },
+          {
+            icon: <FiServer size={30} />,
+            title: "Backend",
+            information: ["Node.js", "C#"],
+            iconClassDark:
+              "text-AccentDarkTheme bg-AccentDarkTheme/40 shadow-AccentDarkTheme/50",
+            iconClassLight:
+              "text-AccentLightTheme bg-AccentLightTheme/40 shadow-AccentLightTheme/50",
+          },
+          {
+            icon: <GoDatabase size={30} />,
+            title: "Database",
+            information: ["MySQL"],
+            iconClassDark:
+              "text-AccentLightTheme bg-AccentLightTheme/40 shadow-AccentLightTheme/50",
+            iconClassLight:
+              "text-AccentDarkTheme bg-AccentDarkTheme/40 shadow-AccentDarkTheme/50",
           },
         ]}
       />
