@@ -21,22 +21,34 @@ export default function Home() {
         ]}
         information={[
           {
-            icon: <IoCodeSlash className="w-6 h-6" />,
+            icon: <IoCodeSlash size={24} />,
             title: "Desenvolvimento Full Stack",
             description:
               "Experiência completa em frontend e backend, criando aplicações robustas e escaláveis.",
+            iconClassDark:
+              "text-PrimaryDarkTheme bg-PrimaryDarkTheme/40 shadow-PrimaryDarkTheme/70",
+            iconClassLight:
+              "text-PrimaryLightTheme bg-PrimaryLightTheme/40 shadow-PrimaryLightTheme",
           },
           {
-            icon: <PiLightning className="w-6 h-6" />,
+            icon: <PiLightning size={24} />,
             title: "Performance & Otimização",
             description:
               "Foco em criar aplicações rápidas e eficientes, otimizadas para a melhor experiência do usuário.",
+            iconClassDark:
+              "text-SecondaryDarkTheme bg-SecondaryDarkTheme/40 shadow-SecondaryDarkTheme/70",
+            iconClassLight:
+              "text-SecondaryLightTheme bg-SecondaryLightTheme/40 shadow-SecondaryLightTheme",
           },
           {
-            icon: <HiOutlineLightBulb className="w-6 h-6" />,
+            icon: <HiOutlineLightBulb size={24} />,
             title: "Soluções Inovadoras",
             description:
               "Sempre buscando maneiras criativas e eficientes de resolver desafios complexos.",
+            iconClassDark:
+              "text-AccentDarkTheme bg-AccentDarkTheme/40 shadow-AccentDarkTheme/70",
+            iconClassLight:
+              "text-AccentLightTheme bg-AccentLightTheme/40 shadow-AccentLightTheme",
           },
         ]}
       />

@@ -16,8 +16,8 @@ export default function Footer({ name, description }: FooterProps) {
       className={` border-t
       ${
         theme === "dark"
-          ? "border-t-BackgroundLightTheme"
-          : "border-t-BackgroundDarkTheme"
+          ? "border-t-BackgroundLightTheme/50 bg-BackgroundDarkTheme/40"
+          : "border-t-BackgroundDarkTheme/50 bg-BackgroundLightTheme/40"
       }`}
     >
       <section className="max-w-[1450px] w-full mx-auto">
@@ -25,8 +25,8 @@ export default function Footer({ name, description }: FooterProps) {
           className={`grid grid-cols-3 items-center py-6 border-b 
           ${
             theme === "dark"
-              ? "border-b-BackgroundLightTheme"
-              : "border-b-BackgroundDarkTheme"
+              ? "border-b-BackgroundLightTheme/70"
+              : "border-b-BackgroundDarkTheme/70"
           }`}
         >
           <div className="flex-row items-center justify-center">

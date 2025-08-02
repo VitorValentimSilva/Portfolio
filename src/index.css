@@ -55,46 +55,6 @@
     background-blend-mode: normal;
     background-attachment: fixed;
   }
-
-  html.dark footer {
-    background-color: var(--color-BackgroundDarkTheme);
-    background-image: radial-gradient(
-        circle at 30% 30%,
-        var(--color-PrimaryDarkTheme) -50%,
-        transparent 20%
-      ),
-      radial-gradient(
-        circle at 70% 70%,
-        var(--color-SecondaryDarkTheme) -50%,
-        transparent 20%
-      ),
-      linear-gradient(
-        135deg,
-        var(--color-BackgroundDarkTheme),
-        var(--color-SurfaceDarkTheme)
-      );
-    background-blend-mode: screen;
-  }
-
-  html.light footer {
-    background-color: var(--color-BackgroundLightTheme);
-    background-image: radial-gradient(
-        circle at 25% 30%,
-        var(--color-PrimaryLightTheme) -30%,
-        transparent 15%
-      ),
-      radial-gradient(
-        circle at 75% 70%,
-        var(--color-SecondaryLightTheme) -30%,
-        transparent 15%
-      ),
-      linear-gradient(
-        135deg,
-        var(--color-BackgroundLightTheme),
-        var(--color-SurfaceLightTheme)
-      );
-    background-blend-mode: normal;
-  }
 }
 
 html {
