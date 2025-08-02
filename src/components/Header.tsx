@@ -72,7 +72,7 @@ export default function Header({ name, nameItems }: HeaderProps) {
           <button
             onClick={toggleTheme}
             aria-label="Toggle theme"
-            className={`rounded-full border p-1 cursor-pointer transition-transform duration-300 hover:scale-105
+            className={`rounded-full border p-1.5 cursor-pointer transition-transform duration-300 hover:scale-105
         ${
           theme === "dark"
             ? "text-BackgroundLightTheme hover:text-SecondaryDarkTheme after:bg-SecondaryDarkTheme"
@@ -80,9 +80,9 @@ export default function Header({ name, nameItems }: HeaderProps) {
         }`}
           >
             {theme === "dark" ? (
-              <IoMoonOutline className="w-6 h-6 text-secondary" />
+              <IoMoonOutline size={20} />
             ) : (
-              <IoSunnyOutline className="w-6 h-6 text-secondary" />
+              <IoSunnyOutline size={20} />
             )}
           </button>
         </div>

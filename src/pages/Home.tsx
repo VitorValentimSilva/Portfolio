@@ -7,6 +7,7 @@ import Technology from "../components/Technology";
 import { GoDatabase } from "react-icons/go";
 import { FiServer } from "react-icons/fi";
 import { TfiMobile } from "react-icons/tfi";
+import Project from "../components/Project";
 
 export default function Home() {
   return (
@@ -94,6 +95,20 @@ export default function Home() {
               "text-AccentLightTheme bg-AccentLightTheme/40 shadow-AccentLightTheme/50",
             iconClassLight:
               "text-AccentDarkTheme bg-AccentDarkTheme/40 shadow-AccentDarkTheme/50",
+          },
+        ]}
+      />
+
+      <Project
+        info={[
+          {
+            img: "https://91e30ff7-f1a1-44bc-894e-2d7a1c7a25d2.lovableproject.com/src/assets/project-ecommerce.jpg",
+            title: "E-commerce Platform",
+            description:
+              "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos integrado e dashboard analítico. Desenvolvida com React, Node.js e MySQL.",
+            technology: ["React", "TypeScript", "Node.js", "MySQL"],
+            linkGitHub: "",
+            linkProject: "",
           },
         ]}
       />
