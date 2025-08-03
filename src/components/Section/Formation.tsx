@@ -1,7 +1,7 @@
 import { IoSchoolOutline } from "react-icons/io5";
-import { useTheme } from "../hooks/useTheme";
-import SubTitleField from "./SubTitleField";
-import TitleField from "./TitleField";
+import { useTheme } from "../../hooks/useTheme";
+import SubTitleField from "../SubTitleField";
+import TitleField from "../TitleField";
 import { PiMedal } from "react-icons/pi";
 import type { ReactElement } from "react";
 

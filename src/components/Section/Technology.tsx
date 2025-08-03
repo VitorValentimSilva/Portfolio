@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
-import TitleField from "./TitleField";
-import { useTheme } from "../hooks/useTheme";
+import { useTheme } from "../../hooks/useTheme";
+import TitleField from "../TitleField";
 
 interface InfoItem {
   icon: ReactElement;

@@ -1,7 +1,7 @@
 import type { ReactElement } from "react";
-import { useTheme } from "../hooks/useTheme";
 import * as motion from "motion/react-client";
-import TitleField from "./TitleField";
+import { useTheme } from "../../hooks/useTheme";
+import TitleField from "../TitleField";
 
 interface InfoItem {
   icon: ReactElement;

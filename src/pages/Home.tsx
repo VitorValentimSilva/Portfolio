@@ -1,14 +1,15 @@
 import { IoCodeSlash, IoSchoolOutline } from "react-icons/io5";
-import AboutMe from "../components/AboutMe";
-import Initiation from "../components/Initiation";
 import { HiOutlineLightBulb } from "react-icons/hi2";
 import { PiBookOpenText, PiLightning } from "react-icons/pi";
-import Technology from "../components/Technology";
 import { GoDatabase } from "react-icons/go";
 import { FiServer } from "react-icons/fi";
 import { TfiMobile } from "react-icons/tfi";
-import Project from "../components/Project";
-import Formation from "../components/Formation";
+import Formation from "../components/Section/Formation";
+import Contact from "../components/Section/Contact";
+import Initiation from "../components/Section/Initiation";
+import AboutMe from "../components/Section/AboutMe";
+import Technology from "../components/Section/Technology";
+import Project from "../components/Section/Project";
 
 export default function Home() {
   return (
@@ -142,6 +143,8 @@ export default function Home() {
           },
         ]}
       />
+
+      <Contact />
     </>
   );
 }

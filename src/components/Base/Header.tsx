@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { useTheme } from "../hooks/useTheme";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import { useTheme } from "../../hooks/useTheme";
 
 interface HeaderProps {
   name: string;

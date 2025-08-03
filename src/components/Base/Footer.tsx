@@ -1,7 +1,7 @@
-import { useTheme } from "../hooks/useTheme";
 import { IoCode, IoHeartOutline } from "react-icons/io5";
-import SocialLinks from "./SocialLinks";
-import { SOCIAL_LINKS } from "../utils/socialLinks";
+import { useTheme } from "../../hooks/useTheme";
+import SocialLinks from "../SocialLinks";
+import { SOCIAL_LINKS } from "../../utils/socialLinks";
 
 interface FooterProps {
   name: string;

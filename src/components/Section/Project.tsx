@@ -1,7 +1,7 @@
 import { IoLogoGithub } from "react-icons/io5";
-import { useTheme } from "../hooks/useTheme";
-import TitleField from "./TitleField";
 import { FiExternalLink } from "react-icons/fi";
+import { useTheme } from "../../hooks/useTheme";
+import TitleField from "../TitleField";
 
 interface InfoProject {
   img: string;
