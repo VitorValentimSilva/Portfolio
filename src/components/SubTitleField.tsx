@@ -2,9 +2,9 @@ import type { ReactElement } from "react";
 import { useTheme } from "../hooks/useTheme";
 
 interface SubTitleFieldProps {
-  icon: ReactElement;
-  iconClassDark: string;
-  iconClassLight: string;
+  icon?: ReactElement;
+  iconClassDark?: string;
+  iconClassLight?: string;
   title: string;
 }
 

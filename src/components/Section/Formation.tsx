@@ -38,7 +38,7 @@ export default function Formation({ information }: FormationProps) {
       />
 
       <div className="flex justify-between items-center gap-15 w-full max-w-[1450px]">
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <SubTitleField
             icon={<IoSchoolOutline size={34} />}
             iconClassDark="text-PrimaryDarkTheme"
@@ -115,7 +115,7 @@ export default function Formation({ information }: FormationProps) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-6">
           <SubTitleField
             icon={<PiMedal size={32} />}
             iconClassDark="text-SecondaryDarkTheme"
