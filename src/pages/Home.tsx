@@ -1,13 +1,14 @@
-import { IoCodeSlash } from "react-icons/io5";
+import { IoCodeSlash, IoSchoolOutline } from "react-icons/io5";
 import AboutMe from "../components/AboutMe";
 import Initiation from "../components/Initiation";
 import { HiOutlineLightBulb } from "react-icons/hi2";
-import { PiLightning } from "react-icons/pi";
+import { PiBookOpenText, PiLightning } from "react-icons/pi";
 import Technology from "../components/Technology";
 import { GoDatabase } from "react-icons/go";
 import { FiServer } from "react-icons/fi";
 import { TfiMobile } from "react-icons/tfi";
 import Project from "../components/Project";
+import Formation from "../components/Formation";
 
 export default function Home() {
   return (
@@ -109,6 +110,35 @@ export default function Home() {
             technology: ["React", "TypeScript", "Node.js", "MySQL"],
             linkGitHub: "",
             linkProject: "",
+          },
+        ]}
+      />
+
+      <Formation
+        information={[
+          {
+            icon: <IoSchoolOutline size={30} />,
+            iconClassDark:
+              "text-PrimaryDarkTheme bg-PrimaryDarkTheme/30 shadow-PrimaryDarkTheme/30",
+            iconClassLight:
+              "text-PrimaryLightTheme bg-PrimaryLightTheme/30 shadow-PrimaryLightTheme/30",
+            tittle: "Bacharelado em Ciência da Computação",
+            location: "Universidade Federal de Tecnologia",
+            description:
+              "Graduação completa com foco em desenvolvimento de software, algoritmos e estruturas de dados. Projeto de conclusão em sistemas distribuídos.",
+            date: "2018 - 2022",
+          },
+          {
+            icon: <PiBookOpenText size={30} />,
+            iconClassDark:
+              "text-AccentDarkTheme bg-AccentDarkTheme/30 shadow-AccentDarkTheme/30",
+            iconClassLight:
+              "text-AccentLightTheme bg-AccentLightTheme/30 shadow-AccentLightTheme/30",
+            tittle: "Especialização em Desenvolvimento Mobile",
+            location: "Instituto de Tecnologia Avançada",
+            description:
+              "Pós-graduação especializada em desenvolvimento de aplicações móveis nativas e híbridas, com foco em React Native e Flutter.",
+            date: "2022 - 2023",
           },
         ]}
       />
