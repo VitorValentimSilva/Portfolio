@@ -7,9 +7,11 @@ import { MdOutlineLocationOn, MdOutlineMail } from "react-icons/md";
 import { PiPhoneLight } from "react-icons/pi";
 import MessageForm from "../MessageForm";
 import { useTheme } from "../../hooks/useTheme";
+import { useEmailSender } from "../../hooks/useEmailSender";
 
 export default function Contact() {
   const { theme } = useTheme();
+  const sendEmail = useEmailSender();
 
   return (
     <section id="Contato" className="pt-12 pb-14 max-w-[1450px] m-auto">
@@ -99,7 +101,7 @@ export default function Contact() {
             </h4>
           </div>
 
-          <MessageForm />
+          <MessageForm onSubmit={sendEmail} />
         </div>
       </div>
     </section>
