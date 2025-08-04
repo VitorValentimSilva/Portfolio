@@ -63,7 +63,7 @@ export default function Home() {
       <Technology
         infoTechnology={[
           {
-            icon: <IoCodeSlash size={30} />,
+            icon: <IoCodeSlash className="h-6 w-6 md:h-8 md:w-8" />,
             title: "Frontend",
             information: ["React", "TypeScript"],
             iconClassDark:
@@ -72,7 +72,7 @@ export default function Home() {
               "text-PrimaryLightTheme bg-PrimaryLightTheme/40 shadow-PrimaryLightTheme/50",
           },
           {
-            icon: <TfiMobile size={30} />,
+            icon: <TfiMobile className="h-6 w-6 md:h-8 md:w-8" />,
             title: "Mobile",
             information: ["React Native"],
             iconClassDark:
@@ -81,7 +81,7 @@ export default function Home() {
               "text-SecondaryLightTheme bg-SecondaryLightTheme/40 shadow-SecondaryLightTheme/50",
           },
           {
-            icon: <FiServer size={30} />,
+            icon: <FiServer className="h-6 w-6 md:h-8 md:w-8" />,
             title: "Backend",
             information: ["Node.js", "C#"],
             iconClassDark:
@@ -90,7 +90,7 @@ export default function Home() {
               "text-AccentLightTheme bg-AccentLightTheme/40 shadow-AccentLightTheme/50",
           },
           {
-            icon: <GoDatabase size={30} />,
+            icon: <GoDatabase className="h-6 w-6 md:h-8 md:w-8" />,
             title: "Database",
             information: ["MySQL"],
             iconClassDark:

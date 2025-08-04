@@ -33,7 +33,7 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
         description="Domino um conjunto diversificado de tecnologias modernas para criar soluções completas e eficientes"
       />
 
-      <div className="flex items-center justify-between max-w-[1450px] w-full">
+      <div className="flex items-center flex-wrap gap-8 justify-between px-6 max-w-[1498px] w-full">
         {infoTechnology.map((item, idx) => (
           <motion.div
             key={idx}
@@ -41,8 +41,8 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
             whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: idx * 0.15 }}
-            className={`rounded-3xl py-6 flex flex-col items-center justify-between
-                        max-w-[300px] w-full h-[260px]
+            className={`rounded-3xl py-6 flex gap-6 flex-col items-center justify-between
+                        w-full md:h-[260px] md:max-w-[300px]
             ${
               theme === "dark"
                 ? "bg-BackgroundDarkTheme/80"
@@ -50,14 +50,14 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
             }`}
           >
             <div
-              className={`rounded-xl p-4 shadow-xl 
+              className={`rounded-xl p-3.5 md:p-4 shadow-xl 
               ${theme === "dark" ? item.iconClassDark : item.iconClassLight}`}
             >
               {item.icon}
             </div>
 
             <p
-              className={`text-lg font-semibold
+              className={`text-base font-semibold md:text-lg
               ${
                 theme === "dark"
                   ? "text-BackgroundLightTheme"
@@ -71,7 +71,7 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
               {item.information.map((tech, idxTech) => (
                 <button
                   key={idxTech}
-                  className={`border rounded-full px-5 py-1.5 text-base font-semibold transition-transform duration-300 hover:scale-105
+                  className={`border rounded-full px-5 py-1.5 text-sm font-semibold transition-transform duration-300 hover:scale-105 md:text-base
                   ${
                     theme === "dark"
                       ? "border-AccentDarkTheme/20 text-AccentDarkTheme/80 bg-PrimaryLightTheme/20 hover:bg-PrimaryDarkTheme/40"
