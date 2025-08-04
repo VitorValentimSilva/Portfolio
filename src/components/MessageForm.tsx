@@ -26,7 +26,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
       <div>
         <label
-          className={`block font-medium 
+          className={`block font-medium pb-1 md:pb-0
             ${
               theme === "dark"
                 ? "text-BackgroundLightTheme"
@@ -55,7 +55,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
 
       <div>
         <label
-          className={`block font-medium 
+          className={`block font-medium pb-1 md:pb-0
             ${
               theme === "dark"
                 ? "text-BackgroundLightTheme"
@@ -85,7 +85,7 @@ export default function MessageForm({ onSubmit }: MessageFormProps) {
 
       <div>
         <label
-          className={`block font-medium 
+          className={`block font-medium pb-1 md:pb-0
           ${
             theme === "dark"
               ? "text-BackgroundLightTheme"

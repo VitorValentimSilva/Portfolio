@@ -16,7 +16,7 @@ export default function Contact() {
 
   const contactInformationItems = [
     {
-      icon: <MdOutlineMail size={28} />,
+      icon: <MdOutlineMail className="h-6 w-6 md:h-7 md:w-7" />,
       iconClassDark: "text-PrimaryDarkTheme bg-PrimaryDarkTheme/40",
       iconClassLight: "text-PrimaryLightTheme bg-PrimaryLightTheme/40",
       title: "E-mail",
@@ -24,7 +24,7 @@ export default function Contact() {
       href: "mailto:vitorvalentin840@gmail.com",
     },
     {
-      icon: <PiPhoneLight size={28} />,
+      icon: <PiPhoneLight className="h-6 w-6 md:h-7 md:w-7" />,
       iconClassDark: "text-SecondaryDarkTheme bg-SecondaryDarkTheme/40",
       iconClassLight: "text-SecondaryLightTheme bg-SecondaryLightTheme/40",
       title: "Telefone",
@@ -32,7 +32,7 @@ export default function Contact() {
       href: "mailto:vitorvalentin840@gmail.com",
     },
     {
-      icon: <MdOutlineLocationOn size={28} />,
+      icon: <MdOutlineLocationOn className="h-6 w-6 md:h-7 md:w-7" />,
       iconClassDark: "text-AccentDarkTheme bg-AccentDarkTheme/40",
       iconClassLight: "text-AccentLightTheme bg-AccentLightTheme/40",
       title: "Localização",
@@ -43,7 +43,7 @@ export default function Contact() {
 
   const socialMediaItems = [
     {
-      icon: <IoLogoGithub size={28} />,
+      icon: <IoLogoGithub className="h-6 w-6 md:h-7 md:w-7" />,
       iconClassDark: "text-PrimaryLightTheme bg-PrimaryLightTheme/40",
       iconClassLight: "text-PrimaryDarkTheme bg-PrimaryDarkTheme/40",
       title: "GitHub",
@@ -51,7 +51,7 @@ export default function Contact() {
       href: "https://github.com/VitorValentimSilva",
     },
     {
-      icon: <IoLogoLinkedin size={28} />,
+      icon: <IoLogoLinkedin className="h-6 w-6 md:h-7 md:w-7" />,
       iconClassDark: "text-SecondaryLightTheme bg-SecondaryLightTheme/40",
       iconClassLight: "text-SecondaryDarkTheme bg-SecondaryDarkTheme/40",
       title: "Linkedin",
@@ -63,19 +63,18 @@ export default function Contact() {
   return (
     <section
       id="Contato"
-      className="pt-20 pb-14 px-4 md:px-0 max-w-[1450px] mx-auto"
+      className="pt-12 pb-14 px-6 max-w-[1498px] mx-auto md:pt-20"
     >
       <TitleField
         title="Vamos Conversar"
         description="Tem um projeto em mente ou quer discutir uma oportunidade? Adoraria conversar com você!"
       />
 
-      <div className="flex flex-col md:flex-row items-start md:items-stretch gap-12 md:gap-20">
-        {/* COLUNA ESQUERDA: contatos + redes */}
-        <div className="flex-1 flex flex-col gap-12">
+      <div className="flex flex-col items-start gap-12 pt-8 md:flex-row md:items-stretch md:gap-20 md:pt-10">
+        <div className="flex-1 flex flex-col gap-8 m-auto w-full md:gap-12">
           <div className="flex flex-col gap-6">
             <SubTitleField
-              icon={<LuMessageCircle size={28} />}
+              icon={<LuMessageCircle className="h-6 w-6 md:h-7 md:w-7" />}
               iconClassDark="text-PrimaryDarkTheme"
               iconClassLight="text-PrimaryLightTheme"
               title="Informações de Contato"
@@ -115,9 +114,8 @@ export default function Contact() {
           </div>
         </div>
 
-        {/* COLUNA DIREITA: formulário */}
         <div
-          className={`flex-1 flex flex-col gap-4 rounded-2xl p-6 transition-transform duration-300 hover:scale-105
+          className={`w-full flex-1 flex flex-col m-auto gap-4 rounded-2xl p-6 transition-transform duration-300 hover:scale-105
             ${
               theme === "dark"
                 ? "bg-BackgroundDarkTheme/80"
@@ -125,7 +123,7 @@ export default function Contact() {
             }`}
         >
           <h4
-            className={`font-semibold text-3xl ${
+            className={`font-semibold text-center text-2xl md:text-3xl ${
               theme === "dark"
                 ? "text-BackgroundLightTheme"
                 : "text-BackgroundDarkTheme"

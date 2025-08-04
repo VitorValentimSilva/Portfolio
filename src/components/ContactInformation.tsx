@@ -23,11 +23,11 @@ export default function ContactInformation({
   return (
     <a
       className={`cursor-pointer flex gap-5 items-center rounded-2xl p-4 transition-transform duration-300 hover:scale-105
-        ${
-          theme === "dark"
-            ? "bg-BackgroundDarkTheme/80"
-            : "bg-BackgroundLightTheme/80"
-        }`}
+      ${
+        theme === "dark"
+          ? "bg-BackgroundDarkTheme/80"
+          : "bg-BackgroundLightTheme/80"
+      }`}
       target="_blank"
       href={href}
     >
@@ -40,7 +40,7 @@ export default function ContactInformation({
 
       <div className="flex flex-col">
         <h4
-          className={`text-xl font-semibold
+          className={`text-lg font-semibold md:text-xl
           ${
             theme === "dark"
               ? "text-BackgroundLightTheme"
@@ -51,12 +51,12 @@ export default function ContactInformation({
         </h4>
 
         <p
-          className={`text-base
-            ${
-              theme === "dark"
-                ? "text-BackgroundLightTheme/50"
-                : "text-BackgroundDarkTheme/50"
-            }`}
+          className={`text-sm md:text-base
+          ${
+            theme === "dark"
+              ? "text-BackgroundLightTheme/50"
+              : "text-BackgroundDarkTheme/50"
+          }`}
         >
           {description}
         </p>
