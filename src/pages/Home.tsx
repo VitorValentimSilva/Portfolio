@@ -141,6 +141,30 @@ export default function Home() {
               "Pós-graduação especializada em desenvolvimento de aplicações móveis nativas e híbridas, com foco em React Native e Flutter.",
             date: "2022 - 2023",
           },
+          {
+            tittle: "React Professional Developer",
+            location: "Meta",
+            description: "Credencial: META-REACT-2023-XYZ",
+            date: "2023",
+          },
+          {
+            tittle: "TypeScript Advanced Concepts",
+            location: "Microsoft",
+            description: "Credencial: MS-TS-ADV-2023-ABC",
+            date: "2023",
+          },
+          {
+            tittle: "AWS Cloud Practitioner",
+            location: "Amazon Web Services",
+            description: "Credencial: AWS-CP-2022-DEF",
+            date: "2022",
+          },
+          {
+            tittle: "Node.js Application Development",
+            location: "OpenJS Foundation",
+            description: "Credencial: NODE-DEV-2022-GHI",
+            date: "2022",
+          },
         ]}
       />
 

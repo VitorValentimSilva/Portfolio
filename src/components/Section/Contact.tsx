@@ -61,7 +61,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="Contato" className="pt-12 pb-14 max-w-[1450px] m-auto">
+    <section id="Contato" className="pt-20 pb-14 max-w-[1450px] m-auto">
       <TitleField
         title="Vamos Conversar"
         description="Tem um projeto em mente ou quer discutir uma oportunidade? Adoraria conversar com você!"

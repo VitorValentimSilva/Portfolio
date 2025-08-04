@@ -4,6 +4,7 @@ import SubTitleField from "../SubTitleField";
 import TitleField from "../TitleField";
 import { PiMedal } from "react-icons/pi";
 import type { ReactElement } from "react";
+import { FaRegCalendar } from "react-icons/fa";
 
 interface InfoFormation {
   icon?: ReactElement;
@@ -25,11 +26,11 @@ export default function Formation({ information }: FormationProps) {
   return (
     <section
       id="Formação"
-      className={`flex flex-col items-center gap-15 mt-12 pt-12 pb-14
+      className={`flex flex-col items-center gap-15 mt-12 pt-12 pb-14 shadow-xl
       ${
         theme === "dark"
-          ? "bg-BackgroundDarkTheme/40"
-          : "bg-BackgroundLightTheme/40"
+          ? "bg-BackgroundDarkTheme/40 shadow-BackgroundLightTheme/25"
+          : "bg-BackgroundLightTheme/40 shadow-BackgroundDarkTheme/25"
       }`}
     >
       <TitleField
@@ -37,7 +38,7 @@ export default function Formation({ information }: FormationProps) {
         description="Educação sólida e aprendizado contínuo para manter-me sempre atualizado com as tecnologias mais recentes"
       />
 
-      <div className="flex justify-between items-center gap-15 w-full max-w-[1450px]">
+      <div className="flex justify-between gap-15 w-full max-w-[1450px]">
         <div className="flex flex-col gap-6">
           <SubTitleField
             icon={<IoSchoolOutline size={34} />}
@@ -47,71 +48,77 @@ export default function Formation({ information }: FormationProps) {
           />
 
           <div className="flex flex-col gap-8">
-            {information.map((item, key) => (
-              <div
-                key={key}
-                className={`flex gap-6 rounded-2xl w-[700px] p-5
-                ${
-                  theme === "dark"
-                    ? "bg-BackgroundDarkTheme/70"
-                    : "bg-BackgroundLightTheme/70"
-                }`}
-              >
+            {information
+              .filter((item) => Boolean(item.icon))
+              .map((item, key) => (
                 <div
-                  className={`rounded-full p-2 shadow-xl m-auto
-                ${theme === "dark" ? item.iconClassDark : item.iconClassLight}`}
+                  key={key}
+                  className={`flex gap-6 rounded-2xl w-[700px] p-5 transition-transform duration-300 hover:scale-105
+                  ${
+                    theme === "dark"
+                      ? "bg-BackgroundDarkTheme/70"
+                      : "bg-BackgroundLightTheme/70"
+                  }`}
                 >
-                  {item.icon}
-                </div>
+                  <div
+                    className={`rounded-full p-2 shadow-xl m-auto
+                    ${
+                      theme === "dark"
+                        ? item.iconClassDark
+                        : item.iconClassLight
+                    }`}
+                  >
+                    {item.icon}
+                  </div>
 
-                <div className="flex flex-col gap-2">
-                  <h3
-                    className={`font-bold text-2xl text-justify
-                    ${
-                      theme === "dark"
-                        ? "text-BackgroundLightTheme"
-                        : "text-BackgroundDarkTheme"
-                    }`}
-                  >
-                    {item.tittle}
-                  </h3>
-                  <p
-                    className={`font-semibold text-lg
-                    ${
-                      theme === "dark"
-                        ? "text-PrimaryDarkTheme"
-                        : "text-PrimaryLightTheme"
-                    }`}
-                  >
-                    {item.location}
-                  </p>
-                  <p
-                    className={`text-base text-justify
-                    ${
-                      theme === "dark"
-                        ? "text-BackgroundLightTheme/70"
-                        : "text-BackgroundDarkTheme/70"
-                    }`}
-                  >
-                    {item.description}
-                  </p>
-                </div>
+                  <div className="flex flex-col gap-2">
+                    <h3
+                      className={`font-bold text-2xl text-justify
+                      ${
+                        theme === "dark"
+                          ? "text-BackgroundLightTheme"
+                          : "text-BackgroundDarkTheme"
+                      }`}
+                    >
+                      {item.tittle}
+                    </h3>
+                    <p
+                      className={`font-semibold text-lg
+                      ${
+                        theme === "dark"
+                          ? "text-PrimaryDarkTheme"
+                          : "text-PrimaryLightTheme"
+                      }`}
+                    >
+                      {item.location}
+                    </p>
+                    <p
+                      className={`text-base text-justify
+                      ${
+                        theme === "dark"
+                          ? "text-BackgroundLightTheme/70"
+                          : "text-BackgroundDarkTheme/70"
+                      }`}
+                    >
+                      {item.description}
+                    </p>
+                  </div>
 
-                <div className="w-[80px]">
-                  <p
-                    className={`text-sm
-                    ${
-                      theme === "dark"
-                        ? "text-BackgroundLightTheme/70"
-                        : "text-BackgroundDarkTheme/70"
-                    }
+                  <div className="w-[80px]">
+                    <p
+                      className={`text-sm
+                      ${
+                        theme === "dark"
+                          ? "text-BackgroundLightTheme/70"
+                          : "text-BackgroundDarkTheme/70"
+                      }
                   `}
-                  >
-                    {item.date}
-                  </p>
+                    >
+                      {item.date}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
 
@@ -123,72 +130,67 @@ export default function Formation({ information }: FormationProps) {
             title="Certificações"
           />
 
-          <div className="flex flex-col gap-8">
-            {information.map((item, key) => (
-              <div
-                key={key}
-                className={`flex gap-6 rounded-2xl p-5
-                ${
-                  theme === "dark"
-                    ? "bg-BackgroundDarkTheme/70"
-                    : "bg-BackgroundLightTheme/70"
-                }`}
-              >
+          <div className="flex flex-col gap-5">
+            {information
+              .filter((item) => !item.icon)
+              .map((item, key) => (
                 <div
-                  className={`rounded-full p-2 shadow-xl m-auto
-                ${theme === "dark" ? item.iconClassDark : item.iconClassLight}`}
+                  key={key}
+                  className={`w-[650px] flex justify-between rounded-2xl p-5 transition-transform duration-300 hover:scale-105
+                  ${
+                    theme === "dark"
+                      ? "bg-BackgroundDarkTheme/70"
+                      : "bg-BackgroundLightTheme/70"
+                  }`}
                 >
-                  {item.icon}
-                </div>
+                  <div className="flex flex-col gap-1">
+                    <h3
+                      className={`font-bold text-xl text-justify
+                      ${
+                        theme === "dark"
+                          ? "text-BackgroundLightTheme"
+                          : "text-BackgroundDarkTheme"
+                      }`}
+                    >
+                      {item.tittle}
+                    </h3>
+                    <p
+                      className={`font-semibold text-base
+                      ${
+                        theme === "dark"
+                          ? "text-PrimaryDarkTheme"
+                          : "text-PrimaryLightTheme"
+                      }`}
+                    >
+                      {item.location}
+                    </p>
+                    <p
+                      className={`text-base text-justify
+                      ${
+                        theme === "dark"
+                          ? "text-BackgroundLightTheme/70"
+                          : "text-BackgroundDarkTheme/70"
+                      }`}
+                    >
+                      {item.description}
+                    </p>
+                  </div>
 
-                <div className="flex flex-col gap-2">
-                  <h3
-                    className={`font-bold text-2xl text-justify
-                    ${
-                      theme === "dark"
-                        ? "text-BackgroundLightTheme"
-                        : "text-BackgroundDarkTheme"
-                    }`}
-                  >
-                    {item.tittle}
-                  </h3>
-                  <p
-                    className={`font-semibold text-lg
-                    ${
-                      theme === "dark"
-                        ? "text-PrimaryDarkTheme"
-                        : "text-PrimaryLightTheme"
-                    }`}
-                  >
-                    {item.location}
-                  </p>
-                  <p
-                    className={`text-base text-justify
-                    ${
-                      theme === "dark"
-                        ? "text-BackgroundLightTheme/70"
-                        : "text-BackgroundDarkTheme/70"
-                    }`}
-                  >
-                    {item.description}
-                  </p>
-                </div>
-
-                <div className="w-[80px]">
-                  <p
-                    className={`text-sm
-                    ${
-                      theme === "dark"
-                        ? "text-BackgroundLightTheme/70"
-                        : "text-BackgroundDarkTheme/70"
-                    }
+                  <div>
+                    <p
+                      className={`text-sm font-semibold inline-flex items-center gap-2 rounded-2xl py-1 px-4
+                      ${
+                        theme === "dark"
+                          ? "text-BackgroundLightTheme bg-SecondaryDarkTheme/60"
+                          : "text-BackgroundDarkTheme bg-SecondaryLightTheme/60"
+                      }
                   `}
-                  >
-                    {item.date}
-                  </p>
+                    >
+                      <FaRegCalendar size={14} /> {item.date}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </div>

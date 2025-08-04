@@ -21,11 +21,11 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
   return (
     <section
       id="Tecnologias"
-      className={`flex flex-col items-center gap-15 mt-12 pt-12 pb-14
+      className={`flex flex-col items-center gap-15 mt-16 pt-12 pb-18 shadow-xl
       ${
         theme === "dark"
-          ? "bg-BackgroundDarkTheme/40"
-          : "bg-BackgroundLightTheme/40"
+          ? "bg-BackgroundDarkTheme/40 shadow-BackgroundLightTheme/25"
+          : "bg-BackgroundLightTheme/40 shadow-BackgroundDarkTheme/25"
       }`}
     >
       <TitleField

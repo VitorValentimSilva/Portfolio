@@ -22,7 +22,7 @@ export default function Project({ info }: ProjectProps) {
   return (
     <section
       id="Projetos"
-      className="max-w-[1450px] m-auto my-18 flex flex-col items-center gap-18"
+      className="max-w-[1450px] m-auto my-20 flex flex-col items-center gap-18"
     >
       <TitleField
         title="Projetos"
