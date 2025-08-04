@@ -118,7 +118,7 @@ export default function Home() {
       <Formation
         information={[
           {
-            icon: <IoSchoolOutline size={30} />,
+            icon: <IoSchoolOutline className="h-6 w-6 md:h-8 md:w-8" />,
             iconClassDark:
               "text-PrimaryDarkTheme bg-PrimaryDarkTheme/30 shadow-PrimaryDarkTheme/30",
             iconClassLight:
@@ -130,7 +130,7 @@ export default function Home() {
             date: "2018 - 2022",
           },
           {
-            icon: <PiBookOpenText size={30} />,
+            icon: <PiBookOpenText className="h-6 w-6 md:h-8 md:w-8" />,
             iconClassDark:
               "text-AccentDarkTheme bg-AccentDarkTheme/30 shadow-AccentDarkTheme/30",
             iconClassLight:

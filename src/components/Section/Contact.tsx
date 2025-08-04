@@ -115,7 +115,7 @@ export default function Contact() {
         </div>
 
         <div
-          className={`w-full flex-1 flex flex-col m-auto gap-4 rounded-2xl p-6 transition-transform duration-300 hover:scale-105
+          className={`w-full flex-1 flex flex-col gap-4 rounded-2xl p-6 transition-transform duration-300 hover:scale-105
             ${
               theme === "dark"
                 ? "bg-BackgroundDarkTheme/80"
