@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 import { useTheme } from "../../hooks/useTheme";
 import TitleField from "../TitleField";
+import * as motion from "motion/react-client";
 
 interface InfoItem {
   icon: ReactElement;
@@ -34,8 +35,12 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
 
       <div className="flex items-center justify-between max-w-[1450px] w-full">
         {infoTechnology.map((item, idx) => (
-          <div
+          <motion.div
             key={idx}
+            initial={{ opacity: 0, scale: 0.6, rotate: -20 }}
+            whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: idx * 0.15 }}
             className={`rounded-3xl py-6 flex flex-col items-center justify-between
                         max-w-[300px] w-full h-[260px]
             ${
@@ -46,7 +51,7 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
           >
             <div
               className={`rounded-xl p-4 shadow-xl 
-                ${theme === "dark" ? item.iconClassDark : item.iconClassLight}`}
+              ${theme === "dark" ? item.iconClassDark : item.iconClassLight}`}
             >
               {item.icon}
             </div>
@@ -63,9 +68,9 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
             </p>
 
             <div className="flex items-center justify-center gap-4 flex-wrap">
-              {item.information.map((itemInfo, idxInfo) => (
+              {item.information.map((tech, idxTech) => (
                 <button
-                  key={idxInfo}
+                  key={idxTech}
                   className={`border rounded-full px-5 py-1.5 text-base font-semibold transition-transform duration-300 hover:scale-105
                   ${
                     theme === "dark"
@@ -73,11 +78,11 @@ export default function Technology({ infoTechnology }: TechnologyProps) {
                       : "border-AccentLightTheme/20 text-AccentLightTheme bg-PrimaryDarkTheme/50 hover:bg-PrimaryLightTheme/40"
                   }`}
                 >
-                  {itemInfo}
+                  {tech}
                 </button>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
