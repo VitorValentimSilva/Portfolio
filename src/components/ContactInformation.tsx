@@ -7,6 +7,7 @@ interface ContactInformationProps {
   iconClassLight: string;
   title: string;
   description: string;
+  href: string;
 }
 
 export default function ContactInformation({
@@ -15,17 +16,20 @@ export default function ContactInformation({
   iconClassLight,
   title,
   description,
+  href,
 }: ContactInformationProps) {
   const { theme } = useTheme();
 
   return (
-    <div
-      className={`flex gap-5 items-center rounded-2xl p-4
-      ${
-        theme === "dark"
-          ? "bg-BackgroundDarkTheme/80"
-          : "bg-BackgroundLightTheme/80"
-      }`}
+    <a
+      className={`cursor-pointer flex gap-5 items-center rounded-2xl p-4 transition-transform duration-300 hover:scale-105
+        ${
+          theme === "dark"
+            ? "bg-BackgroundDarkTheme/80"
+            : "bg-BackgroundLightTheme/80"
+        }`}
+      target="_blank"
+      href={href}
     >
       <div
         className={`rounded-full p-1.5
@@ -57,6 +61,6 @@ export default function ContactInformation({
           {description}
         </p>
       </div>
-    </div>
+    </a>
   );
 }

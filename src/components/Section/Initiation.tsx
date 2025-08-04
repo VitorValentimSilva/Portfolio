@@ -73,6 +73,11 @@ export default function Initiation({
 
       <div className="flex items-center justify-center gap-6">
         <button
+          onClick={() => {
+            document
+              .getElementById("Projetos")
+              ?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
           className={`inline-flex items-center gap-3 cursor-pointer rounded-xl px-5 py-2
                       transition-transform duration-300 hover:scale-105 font-semibold
             ${
@@ -85,6 +90,11 @@ export default function Initiation({
           <IoArrowDown />
         </button>
         <button
+          onClick={() => {
+            document
+              .getElementById("Contato")
+              ?.scrollIntoView({ behavior: "smooth", block: "start" });
+          }}
           className={`cursor-pointer rounded-xl px-5 py-2 transition-transform duration-300 hover:scale-105 font-semibold
             ${
               theme === "dark"
