@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import * as motion from "motion/react-client";
+import { motion } from "framer-motion";
 import { useTheme } from "../../hooks/useTheme";
 import TitleField from "../TitleField";
 
@@ -12,7 +12,7 @@ interface InfoItem {
 }
 
 interface AboutMeProps {
-  text: Array<string>;
+  text: string[];
   information: InfoItem[];
 }
 
@@ -22,16 +22,17 @@ export default function AboutMe({ text, information }: AboutMeProps) {
   return (
     <section
       id="Sobre"
-      className="max-w-[1450px] flex flex-col items-center m-auto"
+      className="px-4 md:px-0 max-w-[1450px] mx-auto flex flex-col items-center"
     >
       <TitleField title="Sobre Mim" />
 
-      <div className="flex items-center justify-between gap-20 py-12">
-        <div className="flex flex-col items-center gap-8">
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-12 md:gap-20 py-12 w-full">
+        {/* Texto */}
+        <div className="flex-1 flex flex-col gap-6">
           {text.map((item, idx) => (
             <p
               key={idx}
-              className={`text-lg text-justify ${
+              className={`text-base md:text-lg text-justify ${
                 theme === "dark"
                   ? "text-BackgroundLightTheme/90"
                   : "text-BackgroundDarkTheme"
@@ -42,11 +43,12 @@ export default function AboutMe({ text, information }: AboutMeProps) {
           ))}
         </div>
 
-        <div className="flex flex-col items-center gap-8">
+        {/* Info Cards */}
+        <div className="flex-1 flex flex-col gap-8">
           {information.map((item, idx) => (
             <motion.div
               key={idx}
-              className={`flex items-center gap-4 rounded-xl p-5 w-[700px]
+              className={`flex items-center gap-4 rounded-xl p-5 w-full max-w-[700px]
                 ${
                   theme === "dark"
                     ? "bg-SurfaceDarkTheme"
@@ -66,7 +68,7 @@ export default function AboutMe({ text, information }: AboutMeProps) {
               </div>
               <div className="flex flex-col gap-1">
                 <h3
-                  className={`font-semibold text-justify text-xl ${
+                  className={`font-semibold text-xl text-justify ${
                     theme === "dark"
                       ? "text-BackgroundLightTheme"
                       : "text-BackgroundDarkTheme"
@@ -75,7 +77,7 @@ export default function AboutMe({ text, information }: AboutMeProps) {
                   {item.title}
                 </h3>
                 <p
-                  className={`text-justify text-base ${
+                  className={`text-base text-justify ${
                     theme === "dark"
                       ? "text-BackgroundLightTheme/70"
                       : "text-BackgroundDarkTheme/80"

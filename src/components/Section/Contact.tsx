@@ -61,14 +61,18 @@ export default function Contact() {
   ];
 
   return (
-    <section id="Contato" className="pt-20 pb-14 max-w-[1450px] m-auto">
+    <section
+      id="Contato"
+      className="pt-20 pb-14 px-4 md:px-0 max-w-[1450px] mx-auto"
+    >
       <TitleField
         title="Vamos Conversar"
         description="Tem um projeto em mente ou quer discutir uma oportunidade? Adoraria conversar com você!"
       />
 
-      <div className="flex w-full items-center gap-20">
-        <div className="flex flex-col gap-8 w-full">
+      <div className="flex flex-col md:flex-row items-start md:items-stretch gap-12 md:gap-20">
+        {/* COLUNA ESQUERDA: contatos + redes */}
+        <div className="flex-1 flex flex-col gap-12">
           <div className="flex flex-col gap-6">
             <SubTitleField
               icon={<LuMessageCircle size={28} />}
@@ -111,26 +115,24 @@ export default function Contact() {
           </div>
         </div>
 
+        {/* COLUNA DIREITA: formulário */}
         <div
-          className={`flex flex-col gap-4 rounded-2xl p-6 w-full transition-transform duration-300 hover:scale-105
-          ${
-            theme === "dark"
-              ? "bg-BackgroundDarkTheme/80"
-              : "bg-BackgroundLightTheme/80"
-          }`}
+          className={`flex-1 flex flex-col gap-4 rounded-2xl p-6 transition-transform duration-300 hover:scale-105
+            ${
+              theme === "dark"
+                ? "bg-BackgroundDarkTheme/80"
+                : "bg-BackgroundLightTheme/80"
+            }`}
         >
-          <div>
-            <h4
-              className={`font-semibold text-3xl
-              ${
-                theme === "dark"
-                  ? "text-BackgroundLightTheme"
-                  : "text-BackgroundDarkTheme"
-              }`}
-            >
-              Envie uma Mensagem
-            </h4>
-          </div>
+          <h4
+            className={`font-semibold text-3xl ${
+              theme === "dark"
+                ? "text-BackgroundLightTheme"
+                : "text-BackgroundDarkTheme"
+            }`}
+          >
+            Envie uma Mensagem
+          </h4>
 
           <MessageForm onSubmit={sendEmail} />
         </div>

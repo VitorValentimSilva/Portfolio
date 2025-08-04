@@ -13,7 +13,7 @@ export default function Footer({ name, description }: FooterProps) {
 
   return (
     <footer
-      className={` border-t
+      className={`border-t md:px-6
       ${
         theme === "dark"
           ? "border-t-BackgroundLightTheme/50 bg-BackgroundDarkTheme/50"
@@ -22,17 +22,17 @@ export default function Footer({ name, description }: FooterProps) {
     >
       <section className="max-w-[1450px] w-full mx-auto">
         <div
-          className={`grid grid-cols-3 items-center py-6 border-b 
+          className={`grid grid-cols-1 items-center py-4 border-b md:grid-cols-3 md:py-6
           ${
             theme === "dark"
               ? "border-b-BackgroundLightTheme/70"
               : "border-b-BackgroundDarkTheme/70"
           }`}
         >
-          <div className="flex-row items-center justify-center">
+          <div className="flex flex-col items-center justify-center space-y-1 mb-4 md:block md:flex-row md:space-y-0 md:space-x-4 md:mb-0">
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className={`cursor-pointer text-2xl font-bold transition-transform duration-300 hover:scale-105
+              className={`cursor-pointer text-xl font-bold transition-transform duration-300 hover:scale-105 md:text-2xl
               ${
                 theme === "dark"
                   ? "text-PrimaryDarkTheme"
@@ -42,7 +42,8 @@ export default function Footer({ name, description }: FooterProps) {
               {name}
             </button>
             <p
-              className={`texte-base ${
+              className={`text-sm md:text-base
+              ${
                 theme === "dark"
                   ? "text-SurfaceLightTheme"
                   : "text-SurfaceDarkTheme"
@@ -54,9 +55,9 @@ export default function Footer({ name, description }: FooterProps) {
 
           <SocialLinks socialLinks={SOCIAL_LINKS} />
 
-          <div className="flex flex-col items-end text-right">
+          <div className="flex flex-col items-center tex-center m-auto mt-4 md:items-end md:text-right md:m-0">
             <p
-              className={`flex items-center gap-1.5 text-base ${
+              className={`flex items-center gap-1.5 text-sm md:texte-base ${
                 theme === "dark"
                   ? "text-BackgroundLightTheme"
                   : "text-BackgroundDarkTheme"
@@ -80,7 +81,7 @@ export default function Footer({ name, description }: FooterProps) {
               />
             </p>
             <p
-              className={`text-sm text-muted-foreground ${
+              className={`text-muted-foreground text-xs md:text-sm ${
                 theme === "dark"
                   ? "text-BackgroundLightTheme"
                   : "text-BackgroundDarkTheme"
@@ -94,7 +95,7 @@ export default function Footer({ name, description }: FooterProps) {
         <div className="flex items-center justify-center py-6">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className={`cursor-pointer border rounded-full px-8 py-2 font-semibold transition-transform duration-300 hover:scale-105 
+            className={`cursor-pointer border rounded-full px-5 py-1 font-semibold transition-transform duration-300 hover:scale-105 md:px-8 md:py-2
             ${
               theme === "dark"
                 ? "text-AccentDarkTheme border-AccentDarkTheme hover:bg-AccentDarkTheme hover:text-BackgroundLightTheme"

@@ -23,7 +23,7 @@ export default function SubTitleField({
       </p>
 
       <h4
-        className={`text-3xl font-bold
+        className={`text-xl md:text-3xl font-bold
         ${
           theme === "dark"
             ? "text-BackgroundLightTheme"

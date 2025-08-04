@@ -13,7 +13,7 @@ export default function SocialLinks({ socialLinks }: SocialLinksProps) {
       {socialLinks.map((item, index) => (
         <button
           key={index}
-          className={`rounded-full p-2.5 cursor-pointer transition-transform duration-300 hover:scale-105
+          className={`rounded-full p-1.5 cursor-pointer transition-transform duration-300 hover:scale-105 md:p-2.5
           ${
             theme === "dark"
               ? "bg-BackgroundDarkTheme/60 text-BackgroundLightTheme hover:bg-PrimaryDarkTheme/70"

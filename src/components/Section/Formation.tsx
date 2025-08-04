@@ -26,7 +26,7 @@ export default function Formation({ information }: FormationProps) {
   return (
     <section
       id="Formação"
-      className={`flex flex-col items-center gap-15 mt-12 pt-12 pb-14 shadow-xl
+      className={`flex flex-col items-center gap-10 md:gap-15 py-8 shadow-xl md:mt-12 md:pt-12 md:pb-14
       ${
         theme === "dark"
           ? "bg-BackgroundDarkTheme/40 shadow-BackgroundLightTheme/25"
@@ -38,10 +38,10 @@ export default function Formation({ information }: FormationProps) {
         description="Educação sólida e aprendizado contínuo para manter-me sempre atualizado com as tecnologias mais recentes"
       />
 
-      <div className="flex justify-between gap-15 w-full max-w-[1450px]">
-        <div className="flex flex-col gap-6">
+      <div className="flex justify-between flex-wrap px-6 gap-15 w-full max-w-[1450px]">
+        <div className="flex flex-col gap-6 w-full md:w-1/2">
           <SubTitleField
-            icon={<IoSchoolOutline size={34} />}
+            icon={<IoSchoolOutline className="h-6 w-6 md:h-8 md:w-8" />}
             iconClassDark="text-PrimaryDarkTheme"
             iconClassLight="text-PrimaryLightTheme"
             title="Educação Acadêmica"
@@ -53,7 +53,7 @@ export default function Formation({ information }: FormationProps) {
               .map((item, key) => (
                 <div
                   key={key}
-                  className={`flex gap-6 rounded-2xl w-[700px] p-5 transition-transform duration-300 hover:scale-105
+                  className={`lex flex-col md:flex-row gap-6 rounded-2xl w-full max-w-[700px] p-5 transition-transform duration-300 hover:scale-105
                   ${
                     theme === "dark"
                       ? "bg-BackgroundDarkTheme/70"
@@ -122,7 +122,7 @@ export default function Formation({ information }: FormationProps) {
           </div>
         </div>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 w-full md:w-1/2">
           <SubTitleField
             icon={<PiMedal size={32} />}
             iconClassDark="text-SecondaryDarkTheme"
@@ -136,7 +136,7 @@ export default function Formation({ information }: FormationProps) {
               .map((item, key) => (
                 <div
                   key={key}
-                  className={`w-[650px] flex justify-between rounded-2xl p-5 transition-transform duration-300 hover:scale-105
+                  className={`flex flex-col md:flex-row justify-between rounded-2xl w-full max-w-[650px] p-5 transition-transform duration-300 hover:scale-105
                   ${
                     theme === "dark"
                       ? "bg-BackgroundDarkTheme/70"
