@@ -19,9 +19,8 @@ export default function Initiation({
   return (
     <section
       id="Início"
-      className="flex flex-col items-center justify-center gap-11 min-h-screen md:h-[850px] px-4"
+      className="flex flex-col items-center justify-center gap-11 h-[755px] md:h-[850px] px-4"
     >
-      {/* Apresentação */}
       <div className="flex flex-col items-center justify-center gap-6">
         <h1 className="text-5xl md:text-7xl text-center font-bold">
           <span
@@ -55,7 +54,6 @@ export default function Initiation({
         </p>
       </div>
 
-      {/* Tecnologias */}
       <div className="flex flex-wrap justify-center gap-4">
         {technology.map((item, idx) => (
           <button
@@ -71,7 +69,6 @@ export default function Initiation({
         ))}
       </div>
 
-      {/* Botões de navegação */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
         <button
           onClick={() =>
@@ -104,14 +101,12 @@ export default function Initiation({
         </button>
       </div>
 
-      {/* Links Sociais */}
       <div className="w-full flex justify-center">
         <div className="flex flex-wrap justify-center gap-4">
           <SocialLinks socialLinks={SOCIAL_LINKS} />
         </div>
       </div>
 
-      {/* Indicador de scroll */}
       <div className="flex justify-center mt-4">
         <IoArrowDown
           size={26}
