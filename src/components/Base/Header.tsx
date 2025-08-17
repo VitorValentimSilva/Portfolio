@@ -25,7 +25,7 @@ export default function Header({ name, nameItems }: HeaderProps) {
 
   return (
     <div
-      className={`sticky top-0 z-50 w-full transition-all duration-200 backdrop-blur-sm
+      className={`sticky top-0 z-50 w-full transition-all duration-200 backdrop-blur-sm md:px-6
         ${scrolled ? "border-b shadow-lg" : "bg-transparent"}
         ${
           theme === "dark"
@@ -34,40 +34,68 @@ export default function Header({ name, nameItems }: HeaderProps) {
         }`}
     >
       <header className="max-w-[1450px] mx-auto flex items-center justify-between py-4 px-4 md:px-0">
-        {/* LOGO */}
         <div>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className={`text-2xl font-bold transition-transform duration-300 hover:scale-105
-              ${
-                theme === "dark"
-                  ? "text-PrimaryDarkTheme"
-                  : "text-PrimaryLightTheme"
-              }`}
+            ${
+              theme === "dark"
+                ? "text-PrimaryDarkTheme"
+                : "text-PrimaryLightTheme"
+            }`}
           >
             {name}
           </button>
         </div>
 
-        {/* HAMBURGUER (mobile) */}
-        <button
-          className="md:hidden text-2xl p-2"
-          onClick={() => setMenuOpen((o) => !o)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <IoClose /> : <IoMenu />}
-        </button>
+        <div className="flex gap-2 items-center md:hidden">
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className={`rounded-full cursor-pointer border p-1 transition-transform duration-300 hover:scale-105
+            ${
+              theme === "dark"
+                ? "text-BackgroundLightTheme hover:text-SecondaryDarkTheme"
+                : "text-BackgroundDarkTheme hover:text-SecondaryLightTheme"
+            }`}
+          >
+            {theme === "dark" ? (
+              <IoMoonOutline size={18} />
+            ) : (
+              <IoSunnyOutline size={18} />
+            )}
+          </button>
 
-        {/* NAV LINKS */}
+          <button
+            className={`text-2xl p-2
+            ${
+              theme === "dark"
+                ? "text-BackgroundLightTheme"
+                : "text-BackgroundDarkTheme"
+            }`}
+            onClick={() => setMenuOpen((o) => !o)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <IoClose /> : <IoMenu />}
+          </button>
+        </div>
+
         <nav
           className={`
-            fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40
+            fixed top-0 left-0 w-full h-full mt-15 md:mt-0
             transform transition-transform duration-200
             ${menuOpen ? "translate-x-0" : "-translate-x-full"}
-            md:static md:translate-x-0 md:bg-transparent md:backdrop-blur-none md:flex
+            md:static md:translate-x-0 md:w-auto md:h-auto md:bg-transparent md:backdrop-blur-none md:flex
           `}
         >
-          <ul className="flex flex-col md:flex-row items-center gap-6 p-8 md:p-0">
+          <ul
+            className={`flex flex-col md:flex-row gap-4 py-3 pl-6 md:p-0 rounded-b-lg
+            ${
+              theme === "dark"
+                ? "bg-BackgroundDarkTheme md:bg-transparent"
+                : "bg-BackgroundLightTheme md:bg-transparent"
+            }`}
+          >
             {nameItems.map((item, idx) => (
               <li key={idx}>
                 <a
@@ -86,17 +114,17 @@ export default function Header({ name, nameItems }: HeaderProps) {
                 </a>
               </li>
             ))}
-            {/* THEME TOGGLE */}
-            <li>
+
+            <li className="hidden md:block">
               <button
                 onClick={toggleTheme}
                 aria-label="Toggle theme"
-                className={`rounded-full border p-1.5 transition-transform duration-300 hover:scale-105
-                  ${
-                    theme === "dark"
-                      ? "text-BackgroundLightTheme hover:text-SecondaryDarkTheme"
-                      : "text-BackgroundDarkTheme hover:text-SecondaryLightTheme"
-                  }`}
+                className={`rounded-full cursor-pointer border p-1.5 transition-transform duration-300 hover:scale-105
+                ${
+                  theme === "dark"
+                    ? "text-BackgroundLightTheme hover:text-SecondaryDarkTheme"
+                    : "text-BackgroundDarkTheme hover:text-SecondaryLightTheme"
+                }`}
               >
                 {theme === "dark" ? (
                   <IoMoonOutline size={20} />
