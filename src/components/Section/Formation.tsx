@@ -165,7 +165,7 @@ export default function Formation({ information }: FormationProps) {
                       {item.location}
                     </p>
                     <p
-                      className={`text-sm text-justify md:text-base
+                      className={`text-sm md:text-base
                       ${
                         theme === "dark"
                           ? "text-BackgroundLightTheme/70"

@@ -36,12 +36,18 @@ export default function Project({ info }: ProjectProps) {
             className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-18"
           >
             <div className="w-full md:w-1/2">
-              <img
-                src={item.img}
-                alt={`Projeto ${item.title}`}
-                title={`Projeto ${item.title}`}
-                className="rounded-4xl w-full h-auto object-cover"
-              />
+              <a
+                href={item.linkProject}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={item.img}
+                  alt={`Projeto ${item.title}`}
+                  title={`Projeto ${item.title}`}
+                  className="rounded-4xl w-full h-auto object-cover"
+                />
+              </a>
             </div>
 
             <div className="flex flex-col gap-6 w-full md:w-1/2">

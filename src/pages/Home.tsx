@@ -16,22 +16,22 @@ export default function Home() {
     <>
       <Initiation
         name="Vitor Valentim"
-        description="Desenvolvedor Full Stack especializado em criar experiências digitais excepcionais"
-        technology={["React Developer", "Mobile Developer", "Full Stack"]}
+        description="Desenvolvedor Full Stack com formação em Análise e Desenvolvimento de Sistemas que transforma requisitos complexos em aplicações robustas e intuitivas, com foco em qualidade e inovação."
+        technology={["React", "React Native", "C#", "TypeScript"]}
       />
 
       <AboutMe
         text={[
-          "Sou um desenvolvedor full stack apaixonado por tecnologia e inovação, com mais de 4 anos de experiência criando soluções digitais que transformam ideias em realidade. Especializo-me em desenvolvimento web moderno e mobile, sempre buscando as melhores práticas e tecnologias mais avançadas.",
-          "Minha jornada começou com a curiosidade sobre como funcionam os aplicativos e sites que usamos diariamente. Desde então, tenho me dedicado a dominar tanto o frontend quanto o backend, criando experiências completas e impactantes para usuários e empresas.",
-          "Acredito que a melhor tecnologia é aquela que resolve problemas reais de forma elegante e eficiente. Por isso, sempre busco entender profundamente as necessidades do projeto antes de escolher as ferramentas e arquiteturas mais adequadas.",
+          "Estou cursando Análise e Desenvolvimento de Sistemas na Unoeste e atuando como Estagiário de Desenvolvimento na Serradata, onde participo de todo o ciclo de vida de um sistema corporativo com ABP Framework (.NET Core) e Blazor Server.",
+          "Ao longo da jornada, desenvolvi front-ends responsivos, APIs RESTful robustas e adoção de boas práticas como arquitetura em camadas, versionamento com Git e colaboração por code review. Acredito que tecnologia eficiente é resultado de um entendimento profundo das necessidades do projeto e da escolha criteriosa de arquiteturas e ferramentas certas.",
+          "Além dos projetos que desenvolvi em React e React Native — fruto de estudos na faculdade, cursos complementares e aplicações práticas como landing pages e aplicativos — adquiri uma sólida experiência em front-end. No back-end, utilizei Node.js em diversos projetos, fortalecendo meu domínio em APIs, lógica de servidor e integrações. Essa combinação me permitiu construir soluções completas, com estética refinada, usabilidade e desempenho confiável.",
         ]}
         information={[
           {
             icon: <IoCodeSlash size={24} />,
             title: "Desenvolvimento Full Stack",
             description:
-              "Experiência completa em frontend e backend, criando aplicações robustas e escaláveis.",
+              "Conduzo projetos de ponta a ponta — desde interfaces em React ou Blazor até back-ends com .NET ou Node.js — garantindo soluções completas, manuteníveis e robustas.",
             iconClassDark:
               "text-PrimaryDarkTheme bg-PrimaryDarkTheme/40 shadow-PrimaryDarkTheme/70",
             iconClassLight:
@@ -39,9 +39,9 @@ export default function Home() {
           },
           {
             icon: <PiLightning size={24} />,
-            title: "Performance & Otimização",
+            title: "Alta Performance & Otimização",
             description:
-              "Foco em criar aplicações rápidas e eficientes, otimizadas para a melhor experiência do usuário.",
+              "Entrego aplicações com carregamento rápido, consumo eficiente de recursos e experiência fluida, priorizando boas práticas de performance e UX.",
             iconClassDark:
               "text-SecondaryDarkTheme bg-SecondaryDarkTheme/40 shadow-SecondaryDarkTheme/70",
             iconClassLight:
@@ -49,9 +49,9 @@ export default function Home() {
           },
           {
             icon: <HiOutlineLightBulb size={24} />,
-            title: "Soluções Inovadoras",
+            title: "Soluções Criativas & Inovadoras",
             description:
-              "Sempre buscando maneiras criativas e eficientes de resolver desafios complexos.",
+              "Transformo desafios complexos em soluções elegantes e eficientes, buscando sempre inovação e clareza técnica.",
             iconClassDark:
               "text-AccentDarkTheme bg-AccentDarkTheme/40 shadow-AccentDarkTheme/70",
             iconClassLight:
@@ -74,7 +74,7 @@ export default function Home() {
           {
             icon: <TfiMobile className="h-6 w-6 md:h-8 md:w-8" />,
             title: "Mobile",
-            information: ["React Native"],
+            information: ["React Native (Apps)"],
             iconClassDark:
               "text-SecondaryDarkTheme bg-SecondaryDarkTheme/40 shadow-SecondaryDarkTheme/50",
             iconClassLight:
@@ -83,7 +83,7 @@ export default function Home() {
           {
             icon: <FiServer className="h-6 w-6 md:h-8 md:w-8" />,
             title: "Backend",
-            information: ["Node.js", "C#"],
+            information: ["Node.js (APIs)", "C#"],
             iconClassDark:
               "text-AccentDarkTheme bg-AccentDarkTheme/40 shadow-AccentDarkTheme/50",
             iconClassLight:
@@ -92,7 +92,7 @@ export default function Home() {
           {
             icon: <GoDatabase className="h-6 w-6 md:h-8 md:w-8" />,
             title: "Database",
-            information: ["MySQL"],
+            information: ["MySQL (EF Core)"],
             iconClassDark:
               "text-AccentLightTheme bg-AccentLightTheme/40 shadow-AccentLightTheme/50",
             iconClassLight:
@@ -104,13 +104,13 @@ export default function Home() {
       <Project
         info={[
           {
-            img: "https://91e30ff7-f1a1-44bc-894e-2d7a1c7a25d2.lovableproject.com/src/assets/project-ecommerce.jpg",
-            title: "E-commerce Platform",
+            img: "/EcoBottle.png",
+            title: "EcoBottle",
             description:
-              "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos integrado e dashboard analítico. Desenvolvida com React, Node.js e MySQL.",
-            technology: ["React", "TypeScript", "Node.js", "MySQL"],
-            linkGitHub: "",
-            linkProject: "",
+              "O EcoBottle é uma landing page de produto sustentável que posiciona uma garrafa 100% reciclável como uma inovação verde no mercado. Desenvolvido com foco em usabilidade, design moderno e performance, o objetivo é não apenas destacar a responsabilidade ambiental do produto, mas também converter visitantes em leads ou clientes..",
+            technology: ["React", "TypeScript", "TailwindCSS", "Framer Motion"],
+            linkGitHub: "https://github.com/VitorValentimSilva/EcoBottle",
+            linkProject: "https://eco-bottle-seven.vercel.app",
           },
         ]}
       />
@@ -123,11 +123,11 @@ export default function Home() {
               "text-PrimaryDarkTheme bg-PrimaryDarkTheme/30 shadow-PrimaryDarkTheme/30",
             iconClassLight:
               "text-PrimaryLightTheme bg-PrimaryLightTheme/30 shadow-PrimaryLightTheme/30",
-            tittle: "Bacharelado em Ciência da Computação",
-            location: "Universidade Federal de Tecnologia",
+            tittle: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            location: "Unoeste",
             description:
-              "Graduação completa com foco em desenvolvimento de software, algoritmos e estruturas de dados. Projeto de conclusão em sistemas distribuídos.",
-            date: "2018 - 2022",
+              "Curso superior de nível tecnólogo focado em formar profissionais capacitados para projetar, implementar e manter sistemas de informação eficientes e confiáveis. Com ênfase prática, o currículo inclui: modelagem e gerenciamento de banco de dados (SQL); lógica de programação e orientação a objetos; arquitetura de software; integração de sistemas.",
+            date: "2023 - 2025",
           },
           {
             icon: <PiBookOpenText className="h-6 w-6 md:h-8 md:w-8" />,
@@ -135,35 +135,38 @@ export default function Home() {
               "text-AccentDarkTheme bg-AccentDarkTheme/30 shadow-AccentDarkTheme/30",
             iconClassLight:
               "text-AccentLightTheme bg-AccentLightTheme/30 shadow-AccentLightTheme/30",
-            tittle: "Especialização em Desenvolvimento Mobile",
-            location: "Instituto de Tecnologia Avançada",
+            tittle: "Formação Front End T6 - ONE",
+            location: "Alura",
             description:
-              "Pós-graduação especializada em desenvolvimento de aplicações móveis nativas e híbridas, com foco em React Native e Flutter.",
-            date: "2022 - 2023",
+              "Programa intensivo com foco em desenvolvimento front-end, abordando desde HTML, CSS e JavaScript até integração de UI interativa e boas práticas de acessibilidade e semântica na web. A formação oferece uma jornada estruturada para montar interfaces responsivas e dinâmicas, incorporando melhores práticas e fundamentos de usabilidade.",
+            date: "2024 - 2024",
           },
           {
-            tittle: "React Professional Developer",
-            location: "Meta",
-            description: "Credencial: META-REACT-2023-XYZ",
-            date: "2023",
+            tittle: "Desenvolvedor de Aplicações Web",
+            location: "Unoeste",
+            description:
+              "Credencial: a14a36238041473141fb9e32369a86 70aa2db4a0e23a1621ab3fbb69eac55bbe",
+            date: "2024",
           },
           {
-            tittle: "TypeScript Advanced Concepts",
-            location: "Microsoft",
-            description: "Credencial: MS-TS-ADV-2023-ABC",
-            date: "2023",
+            tittle: "Programador Front-End",
+            location: "Unoeste",
+            description:
+              "Credencial: b2474435655982f2e522731b04868cbc faf0f11885f333488c839a8b066d64e6",
+            date: "2024",
           },
           {
-            tittle: "AWS Cloud Practitioner",
-            location: "Amazon Web Services",
-            description: "Credencial: AWS-CP-2022-DEF",
-            date: "2022",
+            tittle: "Programa Oracle Next Education F2 T6 Front-end",
+            location: "Alura",
+            description: "Credencial: e1747340-93d1-4a78-bd5b-481745ba7db5",
+            date: "2024",
           },
           {
-            tittle: "Node.js Application Development",
-            location: "OpenJS Foundation",
-            description: "Credencial: NODE-DEV-2022-GHI",
-            date: "2022",
+            tittle:
+              "Formação Empreendedorismo, Agilidade e Protagonismo na Carreira T6 - ONE",
+            location: "Alura",
+            description: "Credencial: ff6920b3-d8fa-47c6-b00c-388065ba1eef",
+            date: "2024",
           },
         ]}
       />
