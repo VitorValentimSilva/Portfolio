@@ -30,10 +30,12 @@ export default function Project({ info }: ProjectProps) {
       />
 
       <div className="w-full flex flex-col gap-16">
-        {info.map((item, key) => (
+        {info.map((item, index) => (
           <div
-            key={key}
-            className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-18"
+            key={index}
+            className={`flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-18 ${
+              index % 2 === 1 ? "md:flex-row-reverse" : ""
+            }`}
           >
             <div className="w-full md:w-1/2">
               <a

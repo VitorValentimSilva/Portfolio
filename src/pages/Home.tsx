@@ -107,10 +107,25 @@ export default function Home() {
             img: "/EcoBottle.png",
             title: "EcoBottle",
             description:
-              "O EcoBottle é uma landing page de produto sustentável que posiciona uma garrafa 100% reciclável como uma inovação verde no mercado. Desenvolvido com foco em usabilidade, design moderno e performance, o objetivo é não apenas destacar a responsabilidade ambiental do produto, mas também converter visitantes em leads ou clientes..",
+              "O EcoBottle é uma landing page de produto sustentável que posiciona uma garrafa 100% reciclável como uma inovação verde no mercado. Desenvolvido com foco em usabilidade, design moderno e performance, o objetivo é não apenas destacar a responsabilidade ambiental do produto, mas também converter visitantes em leads ou clientes.",
             technology: ["React", "TypeScript", "TailwindCSS", "Framer Motion"],
             linkGitHub: "https://github.com/VitorValentimSilva/EcoBottle",
             linkProject: "https://eco-bottle-seven.vercel.app",
+          },
+          {
+            img: "/SkillSwap.png",
+            title: "Skill Swap",
+            description:
+              "SkillSwap é um aplicativo mobile criado com Expo e React Native que permite usuários se conectarem para ensinar e aprender habilidades localmente (ex.: aulas de violão, programação, culinária). O app usa Firebase Auth para autenticação e Firestore/Cloud. Também integra Pinata/IPFS para hospedagem de vídeos enviados pelos instrutores.",
+            technology: [
+              "React Native",
+              "TypeScript",
+              "TailwindCSS",
+              "Firebase",
+            ],
+            linkGitHub: "https://github.com/VitorValentimSilva/SkillSwap",
+            linkProject:
+              "https://drive.google.com/drive/folders/1qqzrLwytYoe_c-Fb-2berT59snbVeGLE?usp=sharing",
           },
         ]}
       />
